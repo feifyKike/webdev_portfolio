@@ -11,6 +11,12 @@ const router = createRouter({
     }
   ],
   scrollBehavior(to, from, savedPosition) {
+    if (to.hash && to.hash == '#landing-page') {
+      return {
+        top: 0,
+        behavior: 'smooth'
+      }
+    }
     if (to.hash) {
       return {
         el: to.hash,
