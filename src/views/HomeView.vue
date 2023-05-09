@@ -33,7 +33,7 @@
 
           <section class="min-h-screen w-full" id="about-section">
             <div class="relative flex py-5 items-center">
-              <h1 class="text-3xl font-bold pr-5">About Me</h1>
+              <h1 class="text-3xl font-bold pr-5">😎 About Me</h1>
               <div class="flex-grow border-t border-black border-1"></div>
             </div>
             <AboutView />
@@ -41,9 +41,10 @@
 
           <section class="min-h-screen w-full" id="experience-section">
             <div class="relative flex py-5 items-center">
-              <h1 class="text-3xl font-bold pr-5">Experience</h1>
+              <h1 class="text-3xl font-bold pr-5">🛡️ Experience</h1>
               <div class="flex-grow border-t border-black border-1"></div>
             </div>
+            <ExperienceView/>
           </section>
 
           <section class="min-h-screen w-full" id="work-section">
@@ -76,5 +77,6 @@
 <script setup>
 import Navbar from '../components/Navbar.vue'
 import AboutView from './AboutView.vue'
+import ExperienceView from './ExperienceView.vue'
 
 </script>

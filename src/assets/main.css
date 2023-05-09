@@ -8,6 +8,9 @@
   font-size: 20px;
   font-family: 'Source Code Pro', monospace;
   height: 100%;
+  margin: 0;
+  width: 100%;
+  scroll-behavior: smooth;
 }
 
 /* a,
