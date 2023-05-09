@@ -35,16 +35,20 @@
         <div class="hidden w-full lg:block lg:w-auto items-center" id="navbar-default">
           <ul class="font-medium flex flex-col p-4 lg:p-0 mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4" aria-current="page">About</a>
+              <!-- <a href="#about-section" class="block py-2 pl-3 pr-4" aria-current="page">About</a> -->
+              <router-link class="block py-2 pl-3 pr-4" to="/#about-section">About</router-link>
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4">Experience</a>
+              <!-- <a href="#" class="block py-2 pl-3 pr-4">Experience</a> -->
+              <router-link class="block py-2 pl-3 pr-4" to="/#experience-section">Experience</router-link>
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4">Work</a>
+              <!-- <a href="#" class="block py-2 pl-3 pr-4">Work</a> -->
+              <router-link class="block py-2 pl-3 pr-4" to="/#work-section">Work</router-link>
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4">Contact</a>
+              <!-- <a href="#" class="block py-2 pl-3 pr-4">Contact</a> -->
+              <router-link class="block py-2 pl-3 pr-4" to="/#contact-section">Contact</router-link>
             </li>
             <li>
               <a href="#" class="block bg-gray-300 py-2 px-6 shadow-md">Resume</a>
