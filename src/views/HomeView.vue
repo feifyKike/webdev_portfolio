@@ -22,7 +22,7 @@
         </div>
         <div class="col-span-4 flex-initial flex flex-col">
           <section class="min-h-screen w-full flex justify-center" id="landing-page">
-            <div class="flex items-center space-x-7">
+            <div class="flex items-center space-x-7 mx-auto">
               <img class="w-96 h-96 rounded-full" src="../assets/images/portrait.jpg"/>
               <div>
                 <h1 class="text-4xl font-bold">Hello, my name is Maxim Shelepov 👨🏻‍💻</h1>
@@ -36,6 +36,7 @@
               <h1 class="text-3xl font-bold pr-5">About Me</h1>
               <div class="flex-grow border-t border-black border-1"></div>
             </div>
+            <AboutView />
           </section>
 
           <section class="min-h-screen w-full" id="experience-section">
@@ -74,5 +75,6 @@
 
 <script setup>
 import Navbar from '../components/Navbar.vue'
+import AboutView from './AboutView.vue'
 
 </script>
