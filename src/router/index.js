@@ -20,10 +20,25 @@ const router = createRouter({
     if (to.hash) {
       return {
         el: to.hash,
+        top: isScrollingUp(to.hash) ? getNavHeight() : 0,
         behavior: 'smooth'
       }
     }
   },
 })
+
+let isScrollingUp = (elem_id) => {
+  const elem = document.querySelector(elem_id)
+  const toScrollPos = elem.getBoundingClientRect().top
+
+  return toScrollPos < 0
+}
+
+let getNavHeight = () => {
+  const nav = document.querySelector('#navbar')
+  const navHeight = nav.getBoundingClientRect().height
+
+  return navHeight
+}
 
 export default router

@@ -1,5 +1,5 @@
 <template>
-    <nav class="w-full fixed z-10 transition-transform duration-500 bg-white/[.9]" :class="{ '-translate-y-full': !showNavbar }">
+    <nav class="w-full fixed z-10 transition-transform duration-500 bg-white/[.9]" :class="{ '-translate-y-full': !showNavbar }" id="navbar">
       <div class="flex flex-wrap items-center justify-between mx-5 p-4">
         <router-link to="/#landing-page">
           <img src="../assets/images/signature_logo.png" height="100.6" width="184" class="drop-shadow-lg">
