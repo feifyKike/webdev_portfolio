@@ -3,9 +3,9 @@
     <Navbar />
 
     <div class="min-h-full mx-10">
-      <div class="grid grid-cols-6 min-h-full">
-        <div class="col-span-1 flex-none relative">
-          <ul class="fixed bottom-0 mb-7 flex flex-col space-y-4">
+      <div class="flex flex-col md:grid md:grid-cols-6 min-h-full">
+        <div class="col-span-1 flex-initial relative mx-auto md:mx-0 order-2 md:order-none">
+          <ul class="md:fixed md:bottom-0 mb-7 flex space-x-4 md:flex-col md:space-y-4 md:space-x-0">
             <li>
               <a href="#"><img class="h-50 w-50" src="../components/icons/github.png"/></a>
             </li>
@@ -20,9 +20,9 @@
             </li>
           </ul>
         </div>
-        <div class="col-span-4 flex-initial flex flex-col">
+        <div class="col-span-4 flex-1 flex-col order-1 md:order-none">
           <section class="min-h-screen w-full flex justify-center" id="landing-page">
-            <div class="flex items-center space-x-7 mx-auto">
+            <div class="flex items-center space-x-0 space-y-7 md:space-y-0 md:space-x-7 flex-col md:flex-row m-auto">
               <img class="w-96 h-96 rounded-full" src="../assets/images/portrait.jpg"/>
               <div>
                 <h1 class="text-4xl font-bold">Hello, my name is Maxim Shelepov 👨🏻‍💻</h1>
@@ -65,14 +65,18 @@
             <ContactView />
           </section>
 
-          <footer class="text-center">
+          <footer class="hidden text-center md:block">
             <p>Designed & Created by Maxim Shelepov</p>
             <a href="#">Code available on Github 👾</a>
           </footer>
         </div>
-        <div class="col-span-1 flex-none relative">
+        <div class="hidden col-span-1 md:flex flex-initial relative order-2 text-center md:order-none">
           <p class="fixed bottom-0 right-10 origin-top-right rotate-90">📍 Based in Raleigh, NC</p>
         </div>
+        <footer class="block text-center md:hidden order-last">
+            <p>Designed & Created by Maxim Shelepov</p>
+            <a href="#">Code available on Github 👾</a>
+        </footer>
       </div>
   </div>
   </div>

@@ -17,16 +17,20 @@
         <div v-show="dropDownActive" class="block w-full lg:hidden">
           <ul>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4" aria-current="page">About</a>
+              <!-- <a href="#" class="block py-2 pl-3 pr-4" aria-current="page">About</a> -->
+              <router-link class="block py-2 pl-3 pr-4" to="/#about-section">About</router-link>
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4">Experience</a>
+              <!-- <a href="#" class="block py-2 pl-3 pr-4">Experience</a> -->
+              <router-link class="block py-2 pl-3 pr-4" to="/#experience-section">Experience</router-link>
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4">Work</a>
+              <!-- <a href="#" class="block py-2 pl-3 pr-4">Work</a> -->
+              <router-link class="block py-2 pl-3 pr-4" to="/#work-section">Work</router-link>
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4">Contact</a>
+              <!-- <a href="#" class="block py-2 pl-3 pr-4">Contact</a> -->
+              <router-link class="block py-2 pl-3 pr-4" to="/#contact-section">Contact</router-link>
             </li>
             <li>
               <a href="#" class="block text-center bg-gray-300 py-2 px-6 drop-shadow-lg">Resume</a>
@@ -53,7 +57,7 @@
               <router-link class="block py-2 pl-3 pr-4" to="/#contact-section">Contact</router-link>
             </li>
             <li>
-              <a href="#" class="block bg-gray-300 py-2 px-6 shadow-md">Resume</a>
+              <a href="#" class="block bg-gray-300 py-2 px-6 drop-shadow-lg">Resume</a>
             </li>
           </ul>
         </div>
@@ -86,6 +90,6 @@ let onScroll = () => {
 
   showNavbar.value = currScrollPosition < prevScrollPosition.value
   prevScrollPosition.value = currScrollPosition
-
+  dropDownActive.value = false
 }
 </script>
