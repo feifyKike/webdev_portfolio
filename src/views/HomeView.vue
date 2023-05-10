@@ -49,16 +49,20 @@
 
           <section class="min-h-screen w-full" id="work-section">
             <div class="relative flex py-5 items-center">
-              <h1 class="text-3xl font-bold pr-5">Work</h1>
+              <h1 class="text-3xl font-bold pr-5">💻 Work</h1>
               <div class="flex-grow border-t border-black border-1"></div>
+              <a href="#" class="pl-5">Visit the Archive</a>
             </div>
+            <WorkView />
           </section>
 
           <section class="min-h-screen w-full" id="contact-section">
             <div class="relative flex py-5 items-center">
-              <h1 class="text-3xl font-bold pr-5">Contact</h1>
+              <div class="flex-grow border-t border-black border-1"></div>
+              <h1 class="text-3xl font-bold px-5">📇 Contact</h1>
               <div class="flex-grow border-t border-black border-1"></div>
             </div>
+            <ContactView />
           </section>
 
           <footer class="text-center">
@@ -78,5 +82,6 @@
 import Navbar from '../components/Navbar.vue'
 import AboutView from './AboutView.vue'
 import ExperienceView from './ExperienceView.vue'
-
+import WorkView from './WorkView.vue'
+import ContactView from './ContactView.vue'
 </script>

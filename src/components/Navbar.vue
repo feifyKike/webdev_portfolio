@@ -2,7 +2,7 @@
     <nav class="w-full fixed z-10 transition-transform duration-500 bg-white/[.9]" :class="{ '-translate-y-full': !showNavbar }">
       <div class="flex flex-wrap items-center justify-between mx-5 p-4">
         <router-link to="/#landing-page">
-          <img src="../assets/images/signature_logo.png" height="100.6" width="184" class="drop-shadow-md">
+          <img src="../assets/images/signature_logo.png" height="100.6" width="184" class="drop-shadow-lg">
         </router-link>
 
         <button @click="dropDownActive = !dropDownActive" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 lg:hidden">
@@ -29,7 +29,7 @@
               <a href="#" class="block py-2 pl-3 pr-4">Contact</a>
             </li>
             <li>
-              <a href="#" class="block text-center bg-gray-300 py-2 px-6 drop-shadow-md">Resume</a>
+              <a href="#" class="block text-center bg-gray-300 py-2 px-6 drop-shadow-lg">Resume</a>
             </li>
           </ul>
         </div>

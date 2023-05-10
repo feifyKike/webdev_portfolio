@@ -1,6 +1,6 @@
 <template>
     <div class="flex-1 rounded-md bg-gray-200 shadow-black text-left p-4">
-        <h3 class="text-xl font-extrabold">Programming Intern @<a>Wolftech</a></h3>
+        <h3 class="text-xl font-extrabold">Programming Intern @<a href="#">Wolftech</a></h3>
         <p class="italic">Aug 2022 - Present</p>
         <ul class="list-image-[url(../components/icons/bullet_point.png)] pl-8 pt-4">
             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
