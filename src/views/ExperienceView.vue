@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-wrap space-y-4 space-x-0 sm:space-x-4 sm:space-y-0 mb-10">
+    <div class="flex flex-col space-y-4 lg:grid lg:grid-cols-2 lg:gap-x-4 lg:space-y-0">
         <ExperienceCard v-for="experience in content" :experience="experience"/>
     </div>
 </template>
