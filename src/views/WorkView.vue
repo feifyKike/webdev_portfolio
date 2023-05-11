@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col space-y-8">
+    <div class="flex flex-col space-y-8 mb-10">
         <WorkUnit v-for="project in projInitial" :project="project"/>
         <WorkUnit v-if="showMore" v-for="project in content" :project="project"/>
 

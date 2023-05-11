@@ -33,7 +33,7 @@
               <router-link class="block py-2 pl-3 pr-4" to="/#contact-section">Contact</router-link>
             </li>
             <li>
-              <a href="#" class="block text-center bg-button-color py-2 px-6 shadow-sm shadow-button-color text-white">Resume</a>
+              <a :href="portfolio.greeting.resumeLink" class="block text-center bg-button-color py-2 px-6 shadow-sm shadow-button-color text-white" target="_blank">Resume</a>
             </li>
           </ul>
         </div>

@@ -98,7 +98,7 @@ const works = [
                 url: "https://github.com/feifyKike/TrackYourSubsDemo/"
             }
         ],
-        imageLink: "",
+        imageLink: "src/assets/project_images/tracksubs_pic.png",
         alignLeft: false
     },
     {
@@ -112,7 +112,7 @@ const works = [
                 url: "https://maximshelepov.com"
             }
         ],
-        imageLink: "",
+        imageLink: "src/assets/project_images/portfolio_pic.png",
         alignLeft: true
     },
     {
@@ -130,7 +130,7 @@ const works = [
                 url: "https://github.com/feifyKike/sudokusolver"
             }
         ],
-        imageLink: "",
+        imageLink: "src/assets/project_images/sudoku_pic.png",
         alignLeft: false
     },
     {
@@ -148,7 +148,7 @@ const works = [
                 url: "https://github.com/feifyKike/JS-API-Quiz"
             }
         ],
-        imageLink: "",
+        imageLink: "src/assets/project_images/trivia_pic.png",
         alignLeft: true
     },
     {
@@ -166,7 +166,7 @@ const works = [
                 url: "https://github.com/feifyKike/Covid-Cases-Visual"
             }
         ],
-        imageLink: "",
+        imageLink: "src/assets/project_images/covid_pic.png",
         alignLeft: false
     }
 ]
