@@ -3,7 +3,7 @@
         <WorkUnit v-for="project in projInitial" :project="project"/>
         <WorkUnit v-if="showMore" v-for="project in content" :project="project"/>
 
-        <button v-show="showPreview" @click="showMore = !showMore" class="w-52 bg-gray-300 py-2 px-6 drop-shadow-lg mx-auto mt-10">{{ showMore ? "Show Less" : "Show More" }}</button>
+        <button v-show="showPreview" @click="showMore = !showMore" class="w-52 py-2 px-6 mx-auto mt-10 bg-button-color text-white shadow-sm shadow-button-color">{{ showMore ? "Show Less" : "Show More" }}</button>
     </div>
 </template>
 <script setup>

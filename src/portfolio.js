@@ -1,3 +1,7 @@
+// Site Styling
+const buttonColor = "#4305ba" // hex color
+const LinkHighlightColor = "#4305ba" // hex color
+
 // Greeting Section
 const greeting = {
     intro: "Hello, my name is Maxim Shelepov 👨🏻‍💻",
@@ -83,7 +87,7 @@ const works = [
         projectName: "TrackYourSubs IOS App",
         yearCompleted: "2022",
         description: "An IOS app to track you subscriptions and expenses, all the while presenting in a clean and professional look with a load of features. Some of the more evident features are: Budgeting (monthly / yearly option available), Current monthly & yearly total expense at a glance, Custom suggestions to meet budget, Organize (Categorization & Importance) and filter through subscriptions, Reminders via scheduled notifications, Stats page: pie chart visual, bar chart visual, and streak indicator.",
-        techStack: "Swift, SwfitUI",
+        techStack: "Swift, SwiftUI",
         links: [
             {
                 label: "Demo",
@@ -188,6 +192,8 @@ const contact = {
 }
 
 export default {
+    buttonColor,
+    LinkHighlightColor,
     greeting,
     socialMediaLinks,
     about,

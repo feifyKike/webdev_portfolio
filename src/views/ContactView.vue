@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col my-auto">
         <div v-if="content.formEmbedLink">
-            <iframe :src="content.formEmbedLink" frameborder="0" marginheight="0" marginwidth="0" class="mb-5 min-h-screen w-full">Loading...</iframe>
+            <iframe :src="content.formEmbedLink" frameborder="0" marginheight="0" marginwidth="0" class="mb-10 min-h-screen w-full">Loading...</iframe>
         </div>
         <div v-else class="space-y-8 mx-auto">
             <h1 class="text-3xl font-extrabold text-center">Get in Touch</h1>

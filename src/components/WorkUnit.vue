@@ -7,7 +7,7 @@
             <p>{{ project.description }}</p>
             <p class="text-gray-400">{{ project.techStack }}</p>
             <div class="flex space-x-4" :class="!project.alignLeft ? 'md:justify-end' : ''">
-                <a v-for="link in project.links" :href="link.url">{{ link.label }}</a>
+                <a v-for="link in project.links" :href="link.url" class="hover:text-link-color">{{ link.label }}</a>
             </div>
         </div>
         <div v-if="project.alignLeft" class="bg-gray-300"></div>

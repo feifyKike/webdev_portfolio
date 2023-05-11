@@ -51,7 +51,7 @@
             <div class="relative flex py-5 items-center">
               <h1 class="text-3xl font-bold pr-5">💻 Work</h1>
               <div class="flex-grow border-t border-black border-1"></div>
-              <a href="#" class="pl-5">Visit the Archive</a>
+              <a href="#" class="pl-5 hover:text-link-color">Visit the Archive</a>
             </div>
             <WorkView :content="portfolio.works"/>
           </section>
@@ -67,7 +67,7 @@
 
           <footer class="hidden text-center md:block">
             <p>Designed & Created by Maxim Shelepov</p>
-            <a href="#">Code available on Github 👾</a>
+            <a href="#" class="hover:text-link-color">Code available on Github 👾</a>
           </footer>
         </div>
         <div class="hidden col-span-1 md:flex flex-initial relative order-2 text-center md:order-none">
@@ -75,7 +75,7 @@
         </div>
         <footer class="block text-center md:hidden order-last">
             <p>Designed & Created by Maxim Shelepov</p>
-            <a href="#">Code available on Github 👾</a>
+            <a href="#" class="hover:text-link-color">Code available on Github 👾</a>
         </footer>
       </div>
   </div>
