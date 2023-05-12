@@ -14,29 +14,31 @@
           </div>
         </button>
 
-        <div v-show="dropDownActive" class="block w-full lg:hidden">
-          <ul>
-            <li>
-              <!-- <a href="#" class="block py-2 pl-3 pr-4" aria-current="page">About</a> -->
-              <router-link class="block py-2 pl-3 pr-4" to="/#about-section">About</router-link>
-            </li>
-            <li>
-              <!-- <a href="#" class="block py-2 pl-3 pr-4">Experience</a> -->
-              <router-link class="block py-2 pl-3 pr-4" to="/#experience-section">Experience</router-link>
-            </li>
-            <li>
-              <!-- <a href="#" class="block py-2 pl-3 pr-4">Work</a> -->
-              <router-link class="block py-2 pl-3 pr-4" to="/#work-section">Work</router-link>
-            </li>
-            <li>
-              <!-- <a href="#" class="block py-2 pl-3 pr-4">Contact</a> -->
-              <router-link class="block py-2 pl-3 pr-4" to="/#contact-section">Contact</router-link>
-            </li>
-            <li>
-              <a :href="portfolio.greeting.resumeLink" class="block text-center bg-button-color py-2 px-6 shadow-sm shadow-button-color text-white" target="_blank">Resume</a>
-            </li>
-          </ul>
-        </div>
+        <NavTransition>
+          <div v-show="dropDownActive" class="block w-full lg:hidden">
+            <ul>
+              <li>
+                <!-- <a href="#" class="block py-2 pl-3 pr-4" aria-current="page">About</a> -->
+                <router-link class="block pt-5 pl-3 pr-4 hover:text-link-color" to="/#about-section">About</router-link>
+              </li>
+              <li>
+                <!-- <a href="#" class="block py-2 pl-3 pr-4">Experience</a> -->
+                <router-link class="block pt-10 pl-3 pr-4 hover:text-link-color" to="/#experience-section">Experience</router-link>
+              </li>
+              <li>
+                <!-- <a href="#" class="block py-2 pl-3 pr-4">Work</a> -->
+                <router-link class="block pt-10 pl-3 pr-4 hover:text-link-color" to="/#work-section">Work</router-link>
+              </li>
+              <li>
+                <!-- <a href="#" class="block py-2 pl-3 pr-4">Contact</a> -->
+                <router-link class="block py-10 pl-3 pr-4 hover:text-link-color" to="/#contact-section">Contact</router-link>
+              </li>
+              <li>
+                <a :href="portfolio.greeting.resumeLink" class="block text-center bg-button-color py-2 px-6 shadow-sm shadow-button-color text-white" target="_blank">Resume</a>
+              </li>
+            </ul>
+          </div>
+        </NavTransition>
 
         <div class="hidden w-full lg:block lg:w-auto items-center" id="navbar-default">
           <ul class="font-medium flex flex-col p-4 lg:p-0 mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
@@ -68,6 +70,7 @@
 <script setup>
 import { Bars2Icon, XMarkIcon } from '@heroicons/vue/24/solid'
 import { ref, onMounted, onBeforeUnmount } from 'vue';
+import NavTransition from './NavTransition.vue';
 import portfolio from '../portfolio'
 
 const dropDownActive = ref(false)
