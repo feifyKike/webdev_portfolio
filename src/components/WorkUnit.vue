@@ -1,8 +1,8 @@
 <template>
     <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-4">
-        <img :src="project.imageLink" class="block lg:hidden pb-4"/>
+        <img :src="project.imageLink" class="block lg:hidden pb-4 drop-shadow-lg"/>
         <div v-if="!project.alignLeft" class="hidden lg:block">
-            <img :src="project.imageLink"/>
+            <img :src="project.imageLink" class="drop-shadow-lg"/>
         </div>
         <div class="flex flex-col space-y-4" :class="project.alignLeft ? 'text-left' : 'lg:text-right'">
             <p>{{ project.yearCompleted }}</p>
@@ -14,7 +14,7 @@
             </div>
         </div>
         <div v-if="project.alignLeft" class="hidden lg:block">
-            <img :src="project.imageLink"/>
+            <img :src="project.imageLink" class="drop-shadow-lg"/>
         </div>
     </div>
 </template>

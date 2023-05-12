@@ -7,16 +7,16 @@
         <div class="col-span-1 flex-initial relative mx-auto md:mx-0 order-2 md:order-none">
           <ul class="md:fixed md:bottom-0 mb-7 flex space-x-4 md:flex-col md:space-y-4 md:space-x-0">
             <li v-show="githubLink.length">
-              <a :href="githubLink" target="_blank"><img class="h-50 w-50" src="../components/icons/github.png"/></a>
+              <a :href="githubLink" target="_blank"><img class="h-50 w-50 transition ease-out hover:-translate-y-1 duration-300" src="../components/icons/github.png"/></a>
             </li>
             <li v-show="linkedinLink.length">
-              <a :href="linkedinLink" target="_blank"><img class="h-50 w-50" src="../components/icons/linkedin.png"/></a>
+              <a :href="linkedinLink" target="_blank"><img class="h-50 w-50 transition ease-out hover:-translate-y-1 duration-300" src="../components/icons/linkedin.png"/></a>
             </li>
             <li v-show="mediumLink.length">
-              <a :href="mediumLink" target="_blank"><img class="h-50 w-50" src="../components/icons/medium.png"/></a>
+              <a :href="mediumLink" target="_blank"><img class="h-50 w-50 transition ease-out hover:-translate-y-1 duration-300" src="../components/icons/medium.png"/></a>
             </li>
             <li v-show="stackoverflowLink.length">
-              <a :href="stackoverflowLink" target="_blank"><img class="h-50 w-50" src="../components/icons/stackoverflow.png"/></a>
+              <a :href="stackoverflowLink" target="_blank"><img class="h-50 w-50 transition ease-out hover:-translate-y-1 duration-300" src="../components/icons/stackoverflow.png"/></a>
             </li>
           </ul>
         </div>

@@ -4,7 +4,7 @@
             <p v-for="paragraph in content.autobiography">{{ paragraph }}<br/><br/></p>
             <div>
                 <p class="pb-3">Most Recent Tech Stack:</p>
-                <ul class="list-image-[url(../components/icons/bullet_point.png)] pl-8 grid grid-rows-2 grid-flow-col">
+                <ul class="flow flow-col list-image-[url(../components/icons/bullet_point.png)] pl-8 sm:grid sm:grid-rows-2 sm:grid-flow-col">
                     <li v-for="tech in content.techStack">{{ tech }}</li>
                 </ul>
             </div>
@@ -12,14 +12,14 @@
         <div class="grid grid-rows-2 gap-y-4 order-1 xl:order-none">
             <div class="grid grid-cols-2 gap-x-4">
                 <div class="">
-                    <img :src="content.photo1Link"/>
+                    <img :src="content.photo1Link" class="drop-shadow-lg"/>
                 </div>
                 <div class="">
-                    <img :src="content.photo2Link"/>
+                    <img :src="content.photo2Link" class="drop-shadow-lg"/>
                 </div>
             </div>
             <div class="">
-                <img :src="content.photo3Link"/>
+                <img :src="content.photo3Link" class="drop-shadow-lg"/>
             </div>
         </div>
     </div>
