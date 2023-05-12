@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen">
+  <div class="min-h-screen dark:bg-black dark:text-white">
     <Navbar />
 
     <div class="min-h-full mx-10">
@@ -7,16 +7,16 @@
         <div class="col-span-1 flex-initial relative mx-auto md:mx-0 order-2 md:order-none">
           <ul class="md:fixed md:bottom-0 mb-7 flex space-x-4 md:flex-col md:space-y-4 md:space-x-0">
             <li v-show="githubLink.length">
-              <a :href="githubLink" target="_blank"><img class="h-50 w-50 transition ease-out hover:-translate-y-1 duration-300" src="../components/icons/github.png"/></a>
+              <a :href="githubLink" target="_blank"><img class="h-50 w-50 transition ease-out hover:-translate-y-1 duration-300 dark:invert" src="../components/icons/github.png"/></a>
             </li>
             <li v-show="linkedinLink.length">
-              <a :href="linkedinLink" target="_blank"><img class="h-50 w-50 transition ease-out hover:-translate-y-1 duration-300" src="../components/icons/linkedin.png"/></a>
+              <a :href="linkedinLink" target="_blank"><img class="h-50 w-50 transition ease-out hover:-translate-y-1 duration-300 dark:invert" src="../components/icons/linkedin.png"/></a>
             </li>
             <li v-show="mediumLink.length">
-              <a :href="mediumLink" target="_blank"><img class="h-50 w-50 transition ease-out hover:-translate-y-1 duration-300" src="../components/icons/medium.png"/></a>
+              <a :href="mediumLink" target="_blank"><img class="h-50 w-50 transition ease-out hover:-translate-y-1 duration-300 dark:invert" src="../components/icons/medium.png"/></a>
             </li>
             <li v-show="stackoverflowLink.length">
-              <a :href="stackoverflowLink" target="_blank"><img class="h-50 w-50 transition ease-out hover:-translate-y-1 duration-300" src="../components/icons/stackoverflow.png"/></a>
+              <a :href="stackoverflowLink" target="_blank"><img class="h-50 w-50 transition ease-out hover:-translate-y-1 duration-300 dark:invert" src="../components/icons/stackoverflow.png"/></a>
             </li>
           </ul>
         </div>
@@ -34,7 +34,7 @@
           <section class="min-h-screen w-full" id="about-section">
             <div class="relative flex py-5 items-center">
               <h1 class="text-3xl font-bold pr-5">😎 About Me</h1>
-              <div class="flex-grow border-t border-black border-1"></div>
+              <div class="flex-grow border-t border-black dark:border-white border-1"></div>
             </div>
             <AboutView :content="portfolio.about"/>
           </section>
@@ -42,7 +42,7 @@
           <section class="min-h-screen w-full" id="experience-section">
             <div class="relative flex py-5 items-center">
               <h1 class="text-3xl font-bold pr-5">🛡️ Experience</h1>
-              <div class="flex-grow border-t border-black border-1"></div>
+              <div class="flex-grow border-t border-black dark:border-white border-1"></div>
             </div>
             <ExperienceView :content="portfolio.experiences"/>
           </section>
@@ -50,7 +50,7 @@
           <section class="min-h-screen w-full" id="work-section">
             <div class="relative flex py-5 items-center">
               <h1 class="text-3xl font-bold pr-5">💻 Work</h1>
-              <div class="flex-grow border-t border-black border-1"></div>
+              <div class="flex-grow border-t border-black dark:border-white border-1"></div>
               <a href="#" class="pl-5 hover:text-link-color">Visit the Archive</a>
             </div>
             <WorkView :content="portfolio.works"/>
@@ -58,9 +58,9 @@
 
           <section class="min-h-screen w-full flex flex-col" id="contact-section">
             <div class="relative flex py-5 items-center">
-              <div class="flex-grow border-t border-black border-1"></div>
+              <div class="flex-grow border-t border-black dark:border-white border-1"></div>
               <h1 class="text-3xl font-bold px-5">📇 Contact</h1>
-              <div class="flex-grow border-t border-black border-1"></div>
+              <div class="flex-grow border-t border-black dark:border-white border-1"></div>
             </div>
             <ContactView :content="portfolio.contact"/>
           </section>

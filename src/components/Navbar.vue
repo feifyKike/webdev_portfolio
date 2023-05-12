@@ -1,5 +1,5 @@
 <template>
-    <nav class="w-full fixed z-10 transition-transform duration-500 bg-white/[.9]" :class="{ '-translate-y-full': !showNavbar }" id="navbar">
+    <nav class="w-full fixed z-10 transition-transform duration-500 bg-white/[.9] dark:bg-black/[.9]" :class="{ '-translate-y-full': !showNavbar }" id="navbar">
       <div class="flex flex-wrap items-center justify-between mx-5 p-4">
         <router-link to="/#landing-page">
           <img :src="portfolio.greeting.logoAbsoluteLink" height="100.6" width="184" class="drop-shadow-lg">
@@ -7,10 +7,10 @@
 
         <button @click="dropDownActive = !dropDownActive" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 lg:hidden">
           <div v-if="!dropDownActive">
-            <Bars2Icon class="h-10 w-10"/>
+            <Bars2Icon class="h-10 w-10 dark:fill-gray-300"/>
           </div>
           <div v-else>
-            <XMarkIcon class="h-10 w-10"/>
+            <XMarkIcon class="h-10 w-10 dark:fill-gray-300"/>
           </div>
         </button>
 

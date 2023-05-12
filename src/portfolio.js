@@ -1,4 +1,4 @@
-// Site Styling
+// Site Styling (recommendation: choose a color suitable for dark and light modes)
 const buttonColor = "#4305ba" // hex color
 const LinkHighlightColor = "#4305ba" // hex color
 
