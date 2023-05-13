@@ -66,7 +66,7 @@
           </section>
 
           <footer class="hidden text-center md:block mb-4">
-            <p>Designed & Created by Maxim Shelepov</p>
+            <p>Designed & Created by <a href="https://maximshelepov.com" class="hover:text-link-color">Maxim Shelepov</a></p>
             <a href="#" class="hover:text-link-color">Code available on Github 👾</a>
           </footer>
         </div>
@@ -74,7 +74,7 @@
           <p class="fixed bottom-0 right-10 origin-top-right rotate-90">📍 Based in {{ portfolio.greeting.basedLocation }}</p>
         </div>
         <footer class="block text-center md:hidden order-last mb-4">
-            <p>Designed & Created by Maxim Shelepov</p>
+            <p>Designed & Created by <a href="https://maximshelepov.com" class="hover:text-link-color">Maxim Shelepov</a></p>
             <a href="#" class="hover:text-link-color">Code available on Github 👾</a>
         </footer>
       </div>
