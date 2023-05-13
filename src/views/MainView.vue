@@ -23,7 +23,7 @@
         <div class="col-span-4 flex-1 flex-col order-1 md:order-none">
           <section class="min-h-screen w-full flex justify-center" id="landing-page">
             <div class="flex items-center space-x-0 space-y-7 md:space-y-0 md:space-x-7 flex-col md:flex-row m-auto">
-              <img class="w-96 h-96 rounded-full drop-shadow-lg" src="../assets/images/portrait.jpg"/>
+              <img class="w-96 h-96 rounded-full drop-shadow-lg" :src="portfolio.greeting.portraitAbsoluteLink"/>
               <div>
                 <h1 class="text-4xl font-bold">{{ portfolio.greeting.intro }}</h1>
                 <p>{{ portfolio.greeting.message }}</p>
