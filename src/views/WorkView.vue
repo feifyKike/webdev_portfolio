@@ -5,7 +5,7 @@
             <WorkUnit v-if="showMore" v-for="project in content" :project="project"/>
         </ProjectTransition>
 
-        <button v-show="showPreview" @click="toggleShowMore" class="w-52 py-2 px-6 mx-auto mt-10 bg-button-color text-white shadow-sm shadow-button-color">{{ showMore ? "Show Less" : "Show More" }}</button>
+        <button v-show="showPreview" @click="toggleShowMore" class="w-52 py-2 px-6 mx-auto mt-10 bg-button-color text-white shadow-sm shadow-button-color transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300">{{ showMore ? "Show Less" : "Show More" }}</button>
     </div>
 </template>
 <script setup>
@@ -27,7 +27,7 @@ const props = defineProps({
 let toggleShowMore = () => {
     showMore.value = !showMore.value
     if (!showMore.value) {
-        router.push({path: '/', hash: '#work-section'})
+        router.push('/#work-section')
     }
 }
 

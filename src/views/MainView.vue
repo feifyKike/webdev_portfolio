@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen dark:bg-black dark:text-white">
+  <div class="min-h-screen overscroll-contain bg-white dark:bg-black dark:text-white">
     <Navbar />
 
     <div class="min-h-full mx-10">
@@ -65,7 +65,7 @@
             <ContactView :content="portfolio.contact"/>
           </section>
 
-          <footer class="hidden text-center md:block">
+          <footer class="hidden text-center md:block mb-4">
             <p>Designed & Created by Maxim Shelepov</p>
             <a href="#" class="hover:text-link-color">Code available on Github 👾</a>
           </footer>
@@ -73,12 +73,12 @@
         <div class="hidden col-span-1 md:flex flex-initial relative order-2 text-center md:order-none">
           <p class="fixed bottom-0 right-10 origin-top-right rotate-90">📍 Based in {{ portfolio.greeting.basedLocation }}</p>
         </div>
-        <footer class="block text-center md:hidden order-last">
+        <footer class="block text-center md:hidden order-last mb-4">
             <p>Designed & Created by Maxim Shelepov</p>
             <a href="#" class="hover:text-link-color">Code available on Github 👾</a>
         </footer>
       </div>
-  </div>
+    </div>
   </div>
 </template>
 
