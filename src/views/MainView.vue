@@ -23,7 +23,7 @@
         <div class="col-span-4 flex-1 flex-col order-1 md:order-none">
           <section class="min-h-screen w-full flex justify-center" id="landing-page">
             <div class="flex items-center space-x-0 space-y-7 md:space-y-0 md:space-x-7 flex-col md:flex-row m-auto">
-              <img class="w-96 h-96 rounded-full drop-shadow-lg" :src="portfolio.greeting.portraitAbsoluteLink"/>
+              <img class="w-96 h-96 rounded-full drop-shadow-lg" :src="portraitImgUrl"/>
               <div>
                 <h1 class="text-4xl font-bold">{{ portfolio.greeting.intro }}</h1>
                 <p>{{ portfolio.greeting.message }}</p>
@@ -65,7 +65,7 @@
             <ContactView :content="portfolio.contact"/>
           </section>
 
-          <footer class="hidden text-center md:block mb-4">
+          <footer class="hidden text-center md:block">
             <p>Designed & Created by <a href="https://maximshelepov.com" class="hover:text-link-color">Maxim Shelepov</a></p>
             <a href="#" class="hover:text-link-color">Code available on Github 👾</a>
           </footer>
@@ -73,7 +73,7 @@
         <div class="hidden col-span-1 md:flex flex-initial relative order-2 text-center md:order-none">
           <p class="fixed bottom-0 right-10 origin-top-right rotate-90">📍 Based in {{ portfolio.greeting.basedLocation }}</p>
         </div>
-        <footer class="block text-center md:hidden order-last mb-4">
+        <footer class="block text-center md:hidden order-last">
             <p>Designed & Created by <a href="https://maximshelepov.com" class="hover:text-link-color">Maxim Shelepov</a></p>
             <a href="#" class="hover:text-link-color">Code available on Github 👾</a>
         </footer>
@@ -92,9 +92,13 @@ import ContactView from './ContactView.vue'
 
 import portfolio from '../portfolio'
 
+// Social Media Links
 const githubLink = portfolio.socialMediaLinks.github
 const linkedinLink = portfolio.socialMediaLinks.linkedin
 const mediumLink = portfolio.socialMediaLinks.medium
 const stackoverflowLink = portfolio.socialMediaLinks.stackoverflow
+
+// Static Images
+const portraitImgUrl = new URL(portfolio.greeting.portraitLink, import.meta.url).href
 
 </script>
