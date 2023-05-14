@@ -12,14 +12,14 @@
         <div class="grid grid-rows-2 gap-y-4 order-1 xl:order-none">
             <div class="grid grid-cols-2 gap-x-4">
                 <div class="">
-                    <img :src="photo1ImgUrl" class="drop-shadow-lg"/>
+                    <img :src="getImageUrl(content.photo1Link)" class="drop-shadow-lg"/>
                 </div>
                 <div class="">
-                    <img :src="photo2ImgUrl" class="drop-shadow-lg"/>
+                    <img :src="getImageUrl(content.photo2Link)" class="drop-shadow-lg"/>
                 </div>
             </div>
             <div class="">
-                <img :src="photo3ImgUrl" class="drop-shadow-lg"/>
+                <img :src="getImageUrl(content.photo3Link)" class="drop-shadow-lg"/>
             </div>
         </div>
     </div>
@@ -31,8 +31,8 @@ const props = defineProps({
 })
 
 // Static Images
-const photo1ImgUrl = new URL(props.content.photo1Link, import.meta.url).href
-const photo2ImgUrl = new URL(props.content.photo2Link, import.meta.url).href
-const photo3ImgUrl = new URL(props.content.photo3Link, import.meta.url).href
+let getImageUrl = (path) => {
+  return new URL(`../assets/${path}`, import.meta.url).href
+}
 
 </script>

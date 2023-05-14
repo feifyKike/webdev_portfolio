@@ -1,8 +1,8 @@
 <template>
     <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-4">
-        <img :src="projImg" class="block lg:hidden pb-4 drop-shadow-lg"/>
+        <img :src="getImageUrl(project.imageLink)" class="block lg:hidden pb-4 drop-shadow-lg"/>
         <div v-if="!project.alignLeft" class="hidden lg:block">
-            <img :src="projImg" class="drop-shadow-lg"/>
+            <img :src="getImageUrl(project.imageLink)" class="drop-shadow-lg"/>
         </div>
         <div class="flex flex-col space-y-4" :class="project.alignLeft ? 'text-left' : 'lg:text-right'">
             <p>{{ project.yearCompleted }}</p>
@@ -14,7 +14,7 @@
             </div>
         </div>
         <div v-if="project.alignLeft" class="hidden lg:block">
-            <img :src="projImg" class="drop-shadow-lg"/>
+            <img :src="getImageUrl(project.imageLink)" class="drop-shadow-lg"/>
         </div>
     </div>
 </template>
@@ -24,7 +24,9 @@ const props = defineProps({
     project: Object
 })
 
-// Static Image
-const projImg = new URL(props.project.imageLink, import.meta.url).href
+// Static Images
+let getImageUrl = (path) => {
+  return new URL(`../assets/${path}`, import.meta.url).href
+}
 
 </script>

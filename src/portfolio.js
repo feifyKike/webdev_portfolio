@@ -8,8 +8,8 @@ const greeting = {
     message: "I'm a web developer and a computer science student at NC State University",
     basedLocation: "Raleigh, NC",
     resumeLink: "https://drive.google.com/file/d/1PilBAB-MTGOPmKnA1W29qOKr_cYxfKnw/preview", // recommended: google drive pdf file preview link
-    logoLink: "../assets/images/signature_logo.png", // use relative paths
-    portraitLink: '../assets/images/portrait.jpg'
+    logoLink: "images/signature_logo.png", // use relative path from  parent directory -> ex: images/image.ext
+    portraitLink: 'images/portrait.jpg'
 }
 
 const socialMediaLinks = {
@@ -33,9 +33,9 @@ const about = {
         "MySQL",
         "Swift"
     ],
-    photo1Link: "../assets/images/portrait1.jpeg",
-    photo2Link: "../assets/images/portrait2.jpeg",
-    photo3Link: "../assets/images/portrait3.jpeg"
+    photo1Link: "images/portrait1.jpeg",
+    photo2Link: "images/portrait2.jpeg",
+    photo3Link: "images/portrait3.jpeg"
 }
 
 // Experience Section
@@ -98,7 +98,7 @@ const works = [
                 url: "https://github.com/feifyKike/TrackYourSubsDemo/"
             }
         ],
-        imageLink: "../assets/images/tracksubs_pic.png",
+        imageLink: "images/tracksubs_pic.png",
         alignLeft: false
     },
     {
@@ -112,7 +112,7 @@ const works = [
                 url: "https://maximshelepov.com"
             }
         ],
-        imageLink: "../assets/images/portfolio_pic.png",
+        imageLink: "images/portfolio_pic.png",
         alignLeft: true
     },
     {
@@ -130,7 +130,7 @@ const works = [
                 url: "https://github.com/feifyKike/sudokusolver"
             }
         ],
-        imageLink: "../assets/images/sudoku_pic.png",
+        imageLink: "images/sudoku_pic.png",
         alignLeft: false
     },
     {
@@ -148,7 +148,7 @@ const works = [
                 url: "https://github.com/feifyKike/JS-API-Quiz"
             }
         ],
-        imageLink: "../assets/images/trivia_pic.png",
+        imageLink: "images/trivia_pic.png",
         alignLeft: true
     },
     {
@@ -166,7 +166,7 @@ const works = [
                 url: "https://github.com/feifyKike/Covid-Cases-Visual"
             }
         ],
-        imageLink: "../assets/images/covid_pic.png",
+        imageLink: "images/covid_pic.png",
         alignLeft: false
     }
 ]

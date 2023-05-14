@@ -2,7 +2,7 @@
     <nav class="w-full fixed z-10 transition-transform duration-500 bg-white/[.9] dark:bg-black/[.9]" :class="{ '-translate-y-full': !showNavbar }" id="navbar">
       <div class="flex flex-wrap items-center justify-between mx-5 p-4">
         <router-link to="/#landing-page">
-          <img :src="logoImgUrl" height="100.6" width="184" class="drop-shadow-lg">
+          <img :src="getImageUrl(portfolio.greeting.logoLink)" height="100.6" width="184" class="drop-shadow-lg">
         </router-link>
 
         <button @click="dropDownActive = !dropDownActive" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 lg:hidden">
@@ -99,4 +99,10 @@ let onScroll = () => {
   prevScrollPosition.value = currScrollPosition
   dropDownActive.value = false
 }
+
+// Static Images
+let getImageUrl = (path) => {
+  return new URL(`../assets/${path}`, import.meta.url).href
+}
+
 </script>
