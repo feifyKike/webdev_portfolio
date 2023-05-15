@@ -67,7 +67,7 @@
 
           <footer class="hidden text-center md:block">
             <p>Designed & Created by <a href="https://maximshelepov.com" class="hover:text-link-color">Maxim Shelepov</a></p>
-            <a href="#" class="hover:text-link-color">Code available on Github 👾</a>
+            <a href="https://github.com/feifyKike/webdev_portfolio" class="hover:text-link-color">Code available on Github 👾</a>
           </footer>
         </div>
         <div class="hidden col-span-1 md:flex flex-initial relative order-2 text-center md:order-none">
@@ -75,7 +75,7 @@
         </div>
         <footer class="block text-center md:hidden order-last">
             <p>Designed & Created by <a href="https://maximshelepov.com" class="hover:text-link-color">Maxim Shelepov</a></p>
-            <a href="#" class="hover:text-link-color">Code available on Github 👾</a>
+            <a href="https://github.com/feifyKike/webdev_portfolio" class="hover:text-link-color">Code available on Github 👾</a>
         </footer>
       </div>
     </div>
