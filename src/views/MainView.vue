@@ -49,9 +49,9 @@
 
           <section class="min-h-screen w-full" id="work-section">
             <div class="relative flex py-5 items-center">
-              <h1 class="text-3xl font-bold pr-5">💻 Work</h1>
+              <h1 class="text-3xl font-bold pr-2 sm:pr-5">💻 Work</h1>
               <div class="flex-grow border-t border-black dark:border-white border-1"></div>
-              <a href="#" class="pl-5 hover:text-link-color">Visit the Archive</a>
+              <a href="#" class="pl-2 sm:pl-5 hover:text-link-color text-right">Visit Archive</a>
             </div>
             <WorkView :content="portfolio.works"/>
           </section>
