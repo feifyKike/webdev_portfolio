@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen overscroll-contain bg-white dark:bg-black dark:text-white">
+  <div class="min-h-screen overscroll-contain bg-white dark:bg-black dark:text-white text-base md:text-xl">
     <Navbar />
 
     <div class="min-h-full mx-10">
@@ -23,9 +23,9 @@
         <div class="col-span-4 flex-1 flex-col order-1 md:order-none">
           <section class="min-h-screen w-full flex justify-center" id="landing-page">
             <div class="flex items-center space-x-0 space-y-7 md:space-y-0 md:space-x-7 flex-col md:flex-row m-auto">
-              <img class="w-96 h-96 rounded-full drop-shadow-lg" :src="getImageUrl(portfolio.greeting.portraitLink)"/>
+              <img class="w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full drop-shadow-lg" :src="getImageUrl(portfolio.greeting.portraitLink)"/>
               <div>
-                <h1 class="text-4xl font-bold">{{ portfolio.greeting.intro }}</h1>
+                <h1 class="text-3xl lg:text-4xl font-bold">{{ portfolio.greeting.intro }}</h1>
                 <p>{{ portfolio.greeting.message }}</p>
               </div>
             </div>
