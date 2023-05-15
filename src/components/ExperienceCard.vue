@@ -5,8 +5,8 @@
         <ul class="list-image-[url(../components/icons/bullet_point.png)] pl-8 pt-4">
             <li v-for="bullet in experience.bulletPoints" class="pb-2">{{ bullet }}</li>
         </ul>
-        <div class="text-gray-400 pt-4 flex justify-between flex-wrap mt-auto">
-            <p v-for="hashtag in experience.hashtags">{{ hashtag }}</p>
+        <div class="text-gray-400 pt-4 flex flex-wrap mt-auto">
+            <p v-for="hashtag in experience.hashtags" class="pr-4 last:pr-0">#{{ hashtag }}</p>
         </div>
     </div>
 </template>
