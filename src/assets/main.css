@@ -10,5 +10,10 @@
   margin: 0;
   width: 100%;
   scroll-behavior: smooth;
-  overscroll-behavior-y: contain;
+}
+
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background-color: black;
+  }
 }
