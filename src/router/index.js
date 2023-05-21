@@ -36,7 +36,7 @@ let isScrollingUp = (elem_id) => {
 
 let getNavHeight = () => {
   const nav = document.querySelector('#logo-img')
-  const navHeight = nav.getBoundingClientRect().height
+  const navHeight = nav.getBoundingClientRect().height + 10 // accounting for bottom padding
 
   return navHeight
 }

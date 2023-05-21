@@ -1,6 +1,6 @@
 <template>
     <nav class="w-full fixed z-10 transition-transform duration-500 bg-white/[.9] dark:bg-black/[.9]" :class="{ '-translate-y-full': !showNavbar }" id="navbar">
-      <div class="flex flex-wrap items-center justify-between mx-5 px-4 pt-4">
+      <div class="flex flex-wrap items-center justify-between mx-5 p-4">
         <router-link to="/#landing-page">
           <img :src="getImageUrl(portfolio.greeting.logoLink)" class="w-[184px] h-[100.6px] object-scale-down drop-shadow-lg" id="logo-img">
         </router-link>
