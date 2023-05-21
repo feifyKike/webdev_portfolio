@@ -1,6 +1,6 @@
 <template>
     <nav class="w-full fixed z-10 transition-transform duration-500 bg-white/[.9] dark:bg-black/[.8]" :class="{ '-translate-y-full': !showNavbar }" id="navbar">
-      <div class="flex flex-wrap items-center justify-between mx-5 p-4">
+      <div class="flex flex-wrap items-center justify-between mx-5 md:p-4">
         <router-link to="/#landing-page">
           <img :src="getImageUrl(portfolio.greeting.logoLink)" class="scale-75 md:scale-100 origin-left drop-shadow-lg" id="logo-img"/>
         </router-link>
@@ -15,7 +15,7 @@
         </button>
 
         <NavTransition>
-          <div v-show="dropDownActive" class="block w-full lg:hidden">
+          <div v-show="dropDownActive" class="block w-full lg:hidden pb-4 md:pb-0">
             <ul>
               <li>
                 <!-- <a href="#" class="block py-2 pl-3 pr-4" aria-current="page">About</a> -->
