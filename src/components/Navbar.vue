@@ -18,23 +18,19 @@
           <div v-show="dropDownActive" class="block w-full lg:hidden pb-4 md:pb-0">
             <ul>
               <li>
-                <!-- <a href="#" class="block py-2 pl-3 pr-4" aria-current="page">About</a> -->
-                <router-link class="block pt-5 pl-3 pr-4 hover:text-link-color" to="/#about-section">About</router-link>
+                <router-link class="block py-5 pl-3 hover:text-link-color" to="/#about-section">About</router-link>
               </li>
               <li>
-                <!-- <a href="#" class="block py-2 pl-3 pr-4">Experience</a> -->
-                <router-link class="block pt-10 pl-3 pr-4 hover:text-link-color" to="/#experience-section">Experience</router-link>
+                <router-link class="block py-5 pl-3 hover:text-link-color" to="/#experience-section">Experience</router-link>
               </li>
               <li>
-                <!-- <a href="#" class="block py-2 pl-3 pr-4">Work</a> -->
-                <router-link class="block pt-10 pl-3 pr-4 hover:text-link-color" to="/#work-section">Work</router-link>
+                <router-link class="block py-5 pl-3 hover:text-link-color" to="/#work-section">Work</router-link>
               </li>
               <li>
-                <!-- <a href="#" class="block py-2 pl-3 pr-4">Contact</a> -->
-                <router-link class="block py-10 pl-3 pr-4 hover:text-link-color" to="/#contact-section">Contact</router-link>
+                <router-link class="block py-5 pl-3 hover:text-link-color" to="/#contact-section">Contact</router-link>
               </li>
               <li>
-                <a :href="portfolio.greeting.resumeLink" class="block text-center bg-button-color py-2 px-6 shadow-sm shadow-button-color text-white" target="_blank">Resume</a>
+                <a :href="portfolio.greeting.resumeLink" class="block text-center bg-button-color py-2 px-6 mt-5 shadow-sm shadow-button-color text-white" target="_blank">Resume</a>
               </li>
             </ul>
           </div>
