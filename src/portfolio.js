@@ -9,7 +9,7 @@ const greeting = {
     basedLocation: "Raleigh, NC",
     resumeLink: "https://drive.google.com/file/d/1PilBAB-MTGOPmKnA1W29qOKr_cYxfKnw/preview", // recommended: google drive pdf file preview link
     // Recommended: Please use accurate sizing for the logo image asset as it will NOT be scaled (so if you want 200px x 100px logo, have an appropriately sized image to those dimensions) -> the scaling will be taken care off automatically.
-    logoLink: "images/signature_logo.png", // use relative path from  parent directory -> ex: images/image.ext
+    logoLink: "images/initials.png", // use relative path from  parent directory -> ex: images/image.ext
     portraitLink: 'images/portrait.jpg'
 }
 
