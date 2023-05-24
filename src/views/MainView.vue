@@ -96,7 +96,7 @@ import AboutView from './AboutView.vue'
 import ExperienceView from './ExperienceView.vue'
 import WorkView from './WorkView.vue'
 import ContactView from './ContactView.vue'
-import ImageTransition from '../components/ImageTransition.vue'
+import ImageTransition from '../components/transitions/ImageTransition.vue'
 
 import portfolio from '../portfolio'
 

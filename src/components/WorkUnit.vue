@@ -41,7 +41,7 @@
 </template>
 <script setup>
 import {ref} from 'vue'
-import ImageTransition from './ImageTransition.vue';
+import ImageTransition from './transitions/ImageTransition.vue';
 
 const props = defineProps({
     project: Object

@@ -11,7 +11,7 @@
 <script setup>
 import { ref} from 'vue'
 import WorkUnit from '../components/WorkUnit.vue'
-import ProjectTransition from '../components/ProjectTransition.vue'
+import ProjectTransition from '../components/transitions/ProjectTransition.vue'
 import { useRouter } from 'vue-router';
 
 const router = useRouter()

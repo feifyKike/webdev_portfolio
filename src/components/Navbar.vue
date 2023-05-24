@@ -66,7 +66,7 @@
 <script setup>
 import { Bars2Icon, XMarkIcon } from '@heroicons/vue/24/solid'
 import { ref, onMounted, onBeforeUnmount } from 'vue';
-import NavTransition from './NavTransition.vue';
+import NavTransition from './transitions/NavTransition.vue';
 import portfolio from '../portfolio'
 
 const dropDownActive = ref(false)
