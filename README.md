@@ -2,7 +2,7 @@
 
 ## A modern, clean, & simple to navigate portfolio template for web developers (or any developer)!
 
-### Includes Pertinent Sections for any Web Devloper Developer Portfolio:
+### Includes Pertinent Sections for any Web Developer Portfolio:
 ✅ Name & Introduction\
 ✅ About\
 ✅ Experience\
@@ -17,7 +17,9 @@ If you would like to contribute to the project take a look at the [Issues](https
 
 Want to add a personal touch to the portfolio? Feel free to open a [pull request](https://github.com/feifyKike/webdev_portfolio/pulls).
 
-🙏 **I would greately appreciate proper credit if you do decided to use this portfolio for any of your purposes. Just leaving the footer as is at the bottom of the template <u>*Designed & Created by Maxim Shelepov*</u> would be enough. Thank you.**
+🙏 I would greatly appreciate proper credit if you do decided to use this portfolio for any of your purposes. Just leaving the footer as is at the bottom of the template **Designed & Created by Maxim Shelepov** would be enough. Thanks.
+
+⭐️ Also leave a star if you would like to see the project further develop and be improved.
 
 ## Table of Contents
 - [Getting Started](#getting-started)
@@ -124,9 +126,10 @@ npm run build
 Hope to continue improving the site, as well as adding more components and layout options in the `src/components` folder.
 
 **Planned Future Improvements:**
-- Add more layout components to `src/components`.
-- More color scheme styling options in `src/portfolio.js`.
-- More text and image styling control in `src/portfolio.js`.
+- [ ] Add more layout components to `src/components`.
+- [ ] More color scheme styling options in `src/portfolio.js`.
+- [ ] More text and image styling control in `src/portfolio.js`.
+- ... and more
 
 💡 Leave your own ideas in the [issues](https://github.com/feifyKike/webdev_portfolio/issues) section or complete my [contact form](https://forms.gle/vhWrKD32i1d2MSZGA).
 
