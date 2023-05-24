@@ -1,8 +1,20 @@
 <template>
     <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-4">
-        <img :src="getImageUrl(project.imageLink)" class="block lg:hidden pb-4 drop-shadow-lg"/>
+        <img
+            @load="showImage1 = !showImage1"
+            :src="getImageUrl(project.imageLink)"
+            class="block lg:hidden pb-4 drop-shadow-lg transition-opacity"
+            :class="showImage1 ? 'opacity-100' : 'opacity-0'"
+            loading="lazy"
+        />
         <div v-if="!project.alignLeft" class="hidden lg:block">
-            <img :src="getImageUrl(project.imageLink)" class="drop-shadow-lg"/>
+            <img
+                @load="showImage2 = !showImage2"
+                :src="getImageUrl(project.imageLink)"
+                class="drop-shadow-lg transition-opacity"
+                :class="showImage2 ? 'opacity-100' : 'opacity-0'"
+                loading="lazy"
+            />
         </div>
         <div class="flex flex-col space-y-4" :class="project.alignLeft ? 'text-left' : 'lg:text-right'">
             <p>{{ project.yearCompleted }}</p>
@@ -14,17 +26,28 @@
             </div>
         </div>
         <div v-if="project.alignLeft" class="hidden lg:block">
-            <img :src="getImageUrl(project.imageLink)" class="drop-shadow-lg"/>
+            <img
+                @load="showImage3 = !showImage3"
+                :src="getImageUrl(project.imageLink)"
+                class="drop-shadow-lg transition-opacity"
+                :class="showImage3 ? 'opacity-100' : 'opacity-0'"
+                loading="lazy"
+            />
         </div>
     </div>
 </template>
 <script setup>
+import {ref} from 'vue'
 
 const props = defineProps({
     project: Object
 })
 
 // Static Images
+const showImage1 = ref(false)
+const showImage2 = ref(false)
+const showImage3 = ref(false)
+
 let getImageUrl = (path) => {
   return new URL(`../assets/${path}`, import.meta.url).href
 }
