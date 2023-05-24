@@ -5,7 +5,6 @@
             :src="getImageUrl(project.imageLink)"
             class="block lg:hidden pb-4 drop-shadow-lg transition-opacity"
             :class="showImage1 ? 'opacity-100' : 'opacity-0'"
-            loading="lazy"
         />
         <div v-if="!project.alignLeft" class="hidden lg:block">
             <img
@@ -13,7 +12,6 @@
                 :src="getImageUrl(project.imageLink)"
                 class="drop-shadow-lg transition-opacity"
                 :class="showImage2 ? 'opacity-100' : 'opacity-0'"
-                loading="lazy"
             />
         </div>
         <div class="flex flex-col space-y-4" :class="project.alignLeft ? 'text-left' : 'lg:text-right'">
@@ -31,7 +29,6 @@
                 :src="getImageUrl(project.imageLink)"
                 class="drop-shadow-lg transition-opacity"
                 :class="showImage3 ? 'opacity-100' : 'opacity-0'"
-                loading="lazy"
             />
         </div>
     </div>

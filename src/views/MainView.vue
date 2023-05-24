@@ -28,7 +28,6 @@
                 class="w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full drop-shadow-lg transition-opacity"
                 :class="showImage ? 'opacity-100' : 'opacity-0'"
                 :src="getImageUrl(portfolio.greeting.portraitLink)"
-                loading="lazy"
               />
               <div>
                 <h1 class="text-3xl lg:text-4xl font-bold">{{ portfolio.greeting.intro }}</h1>
