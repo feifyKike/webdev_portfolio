@@ -1,18 +1,22 @@
 <template>
     <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-4">
-        <img
-            @load="showImage1 = !showImage1"
-            :src="getImageUrl(project.imageLink)"
-            class="block lg:hidden pb-4 drop-shadow-lg transition-opacity"
-            :class="showImage1 ? 'opacity-100' : 'opacity-0'"
-        />
-        <div v-if="!project.alignLeft" class="hidden lg:block">
+        <ImageTransition>
             <img
-                @load="showImage2 = !showImage2"
+                @load="showImage1 = !showImage1"
+                v-show="showImage1"
                 :src="getImageUrl(project.imageLink)"
-                class="drop-shadow-lg transition-opacity"
-                :class="showImage2 ? 'opacity-100' : 'opacity-0'"
+                class="block lg:hidden pb-4 drop-shadow-lg"
             />
+        </ImageTransition>
+        <div v-if="!project.alignLeft" class="hidden lg:block">
+            <ImageTransition>
+                <img
+                    @load="showImage2 = !showImage2"
+                    v-show="showImage2"
+                    :src="getImageUrl(project.imageLink)"
+                    class="drop-shadow-lg"
+                />
+            </ImageTransition>
         </div>
         <div class="flex flex-col space-y-4" :class="project.alignLeft ? 'text-left' : 'lg:text-right'">
             <p>{{ project.yearCompleted }}</p>
@@ -24,17 +28,20 @@
             </div>
         </div>
         <div v-if="project.alignLeft" class="hidden lg:block">
-            <img
-                @load="showImage3 = !showImage3"
-                :src="getImageUrl(project.imageLink)"
-                class="drop-shadow-lg transition-opacity"
-                :class="showImage3 ? 'opacity-100' : 'opacity-0'"
-            />
+            <ImageTransition>
+                <img
+                    @load="showImage3 = !showImage3"
+                    v-show="showImage3"
+                    :src="getImageUrl(project.imageLink)"
+                    class="drop-shadow-lg"
+                />
+            </ImageTransition>
         </div>
     </div>
 </template>
 <script setup>
 import {ref} from 'vue'
+import ImageTransition from './ImageTransition.vue';
 
 const props = defineProps({
     project: Object
