@@ -22,20 +22,19 @@
         </div>
         <div class="col-span-4 flex-1 flex-col order-1 md:order-none">
           <section class="min-h-screen w-full flex justify-center" id="landing-page">
-            <div class="flex items-center space-x-0 space-y-7 md:space-y-0 md:space-x-7 flex-col md:flex-row m-auto">
-              <ImageTransition>
+            <LoadTransition>
+              <div v-show="showIntro" class="flex items-center space-x-0 space-y-7 md:space-y-0 md:space-x-7 flex-col md:flex-row m-auto">
                 <img
-                  @load="showImage = !showImage"
-                  v-show="showImage"
+                  @load="showIntro = !showIntro"
                   class="w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full drop-shadow-lg"
                   :src="getImageUrl(portfolio.greeting.portraitLink)"
                 />
-              </ImageTransition>
-              <div>
-                <h1 class="text-3xl lg:text-4xl font-bold">{{ portfolio.greeting.intro }}</h1>
-                <p>{{ portfolio.greeting.message }}</p>
+                <div>
+                  <h1 class="text-3xl lg:text-4xl font-bold">{{ portfolio.greeting.intro }}</h1>
+                  <p>{{ portfolio.greeting.message }}</p>
+                </div>
               </div>
-            </div>
+            </LoadTransition>
           </section>
 
           <section class="min-h-screen w-full" id="about-section">
@@ -96,7 +95,7 @@ import AboutView from './AboutView.vue'
 import ExperienceView from './ExperienceView.vue'
 import WorkView from './WorkView.vue'
 import ContactView from './ContactView.vue'
-import ImageTransition from '../components/transitions/ImageTransition.vue'
+import LoadTransition from '../components/transitions/LoadTransition.vue'
 
 import portfolio from '../portfolio'
 
@@ -107,7 +106,7 @@ const mediumLink = portfolio.socialMediaLinks.medium
 const stackoverflowLink = portfolio.socialMediaLinks.stackoverflow
 
 // Static Images
-const showImage = ref(false)
+const showIntro = ref(false)
 
 let getImageUrl = (path) => {
   return new URL(`../assets/${path}`, import.meta.url).href

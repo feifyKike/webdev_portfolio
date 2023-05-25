@@ -6,13 +6,13 @@
 <style>
     .slide-fade-in-enter-active,
     .slide-fade-in-leave-active {
-        transition: all 0.15s ease-in;
+        transition: all 0.3s ease-in;
     }
 
     .slide-fade-in-enter-from,
     .slide-fade-in-leave-to {
         opacity: 0;
-        transform: translateY(-5px);
+        transform: translateY(-10px);
     }
 
     .slide-fade-in-enter-to,

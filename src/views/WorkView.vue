@@ -1,9 +1,7 @@
 <template>
     <div class="flex flex-col space-y-12 mb-10">
         <WorkUnit v-for="project in projInitial" :project="project"/>
-        <ProjectTransition>
-            <WorkUnit v-if="showMore" v-for="project in content" :project="project"/>
-        </ProjectTransition>
+        <WorkUnit v-if="showMore" v-for="project in content" :project="project"/>
 
         <button v-show="showPreview" @click="toggleShowMore" class="w-52 py-2 px-6 mx-auto mt-10 bg-button-color text-white shadow-sm shadow-button-color transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300">{{ showMore ? "Show Less" : "Show More" }}</button>
     </div>
