@@ -1,4 +1,4 @@
-# 💻 Web Developer Portfolio ![Last Commit](https://img.shields.io/github/last-commit/feifykike/webdev_portfolio?color=blueviolet) ![Commit Activity](https://img.shields.io/github/commit-activity/month/feifykike/webdev_portfolio?color=blueviolet) [![License](https://img.shields.io/github/license/feifykike/webdev_portfolio?color=blueviolet)](https://github.com/feifyKike/webdev_portfolio/blob/main/LICENSE)
+# 💻 Web Developer Portfolio ![Last Commit](https://img.shields.io/github/last-commit/feifykike/webdev_portfolio?color=blueviolet) ![Commit Activity](https://img.shields.io/github/commit-activity/m/feifykike/webdev_portfolio?color=blueviolet) [![License](https://img.shields.io/github/license/feifykike/webdev_portfolio?color=blueviolet)](https://github.com/feifyKike/webdev_portfolio/blob/main/LICENSE)
 
 ## A modern, clean, & simple to navigate portfolio template for web developers (or any developer)!
 
@@ -139,7 +139,7 @@ Hope to continue improving the site, as well as adding more components and layou
 - [ ] Add more layout components to `src/components`.
 - [ ] More color scheme styling options in `src/portfolio.js`.
 - [ ] More text and animation styling control in `src/portfolio.js`.
-- ... and more
+... and more
 
 💡 Leave your own ideas in the [issues](https://github.com/feifyKike/webdev_portfolio/issues) section or complete my [contact form](https://forms.gle/vhWrKD32i1d2MSZGA).
 
