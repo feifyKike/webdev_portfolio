@@ -33,7 +33,7 @@ Want to add a personal touch to the portfolio? Feel free to open a [pull request
 
 ## Getting Started
 
-These intructions will help you get the project up and running on your local machine for your development and use.
+These instructions will help you get the project up and running on your local machine for your development and use.
 
 You will need to install [Git](https://github.com/git-guides/install-git), [Node.js](https://github.com/git-guides/install-git), & [npm](https://www.npmjs.com/package/npm) (which usually comes pre-installed with the latest version of Node.js but if not install via MacOS [Homebrew](https://formulae.brew.sh/formula/node#default) or the npm.js homepage)
 
@@ -127,7 +127,9 @@ npm run build
 ## Images and Icons
 The images in the [src/assets/images/](https://github.com/feifyKike/webdev_portfolio/tree/main/src/assets/images) project folder are meant to serve as placeholders for your own images. Please intend to replace them with your own image assets.
 
-The social media icons can be used to link your profiles in connection with the company accounts. Take a look at each of the company logo guidelines for further details.
+The project also comes pre-equipped with [heroicons](https://heroicons.com) package (from the makers of tailwind.css) which allows you to use any other additional general purpose icons in the project. In this project, the menu dropdown uses two such icon.
+
+The social media icons are used link your profiles in connection with the company accounts. Take a look at each of the company logo guidelines for any additional usage details.
 
 ℹ️ All brand icons are trademarks of their respective owners. Do not use brand logos for any purpose except
 to represent the company, product, or service to which they refer.
@@ -139,6 +141,7 @@ Hope to continue improving the site, as well as adding more components and layou
 - [ ] Add more layout components to `src/components`.
 - [ ] More color scheme styling options in `src/portfolio.js`.
 - [ ] More text and animation styling control in `src/portfolio.js`.
+
 ... and more
 
 💡 Leave your own ideas in the [issues](https://github.com/feifyKike/webdev_portfolio/issues) section or complete my [contact form](https://forms.gle/vhWrKD32i1d2MSZGA).
