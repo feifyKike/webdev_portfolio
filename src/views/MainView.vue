@@ -5,18 +5,26 @@
     <div class="min-h-full mx-10">
       <div class="flex flex-col md:grid md:grid-cols-6 min-h-full">
         <div class="col-span-1 flex-initial relative mx-auto md:mx-0 order-2 md:order-none">
-          <ul class="md:fixed md:bottom-0 mb-7 flex space-x-4 md:flex-col md:space-y-4 md:space-x-0">
+          <ul class="md:fixed md:bottom-0 mb-7 flex items-center space-x-4 md:flex-col md:space-y-4 md:space-x-0">
             <li v-show="githubLink.length">
-              <a :href="githubLink" target="_blank"><img class="h-50 w-50 transition ease-out hover:-translate-y-1 duration-300 dark:invert" src="../components/icons/github.png"/></a>
+              <a :href="githubLink" target="_blank">
+                <font-awesome-icon icon="fa-brands fa-github" class="h-12 w-12 text-black transition ease-out hover:-translate-y-1 duration-300 dark:text-white"></font-awesome-icon>
+              </a>
             </li>
             <li v-show="linkedinLink.length">
-              <a :href="linkedinLink" target="_blank"><img class="h-50 w-50 transition ease-out hover:-translate-y-1 duration-300 dark:invert" src="../components/icons/linkedin.png"/></a>
+              <a :href="linkedinLink" target="_blank">
+                <font-awesome-icon icon="fa-brands fa-linkedin" class="h-12 w-12 text-black transition ease-out hover:-translate-y-1 duration-300 dark:text-white"></font-awesome-icon>
+              </a>
             </li>
             <li v-show="mediumLink.length">
-              <a :href="mediumLink" target="_blank"><img class="h-50 w-50 transition ease-out hover:-translate-y-1 duration-300 dark:invert" src="../components/icons/medium.png"/></a>
+              <a :href="mediumLink" target="_blank">
+                <font-awesome-icon icon="fa-brands fa-medium" class="h-12 w-12 text-black transition ease-out hover:-translate-y-1 duration-300 dark:text-white"></font-awesome-icon>
+              </a>
             </li>
             <li v-show="stackoverflowLink.length">
-              <a :href="stackoverflowLink" target="_blank"><img class="h-50 w-50 transition ease-out hover:-translate-y-1 duration-300 dark:invert" src="../components/icons/stackoverflow.png"/></a>
+              <a :href="stackoverflowLink" target="_blank">
+                <font-awesome-icon icon="fa-brands fa-stack-overflow" class="h-12 w-12 text-black transition ease-out hover:-translate-y-1 duration-300 dark:text-white"></font-awesome-icon>
+              </a>
             </li>
           </ul>
         </div>
@@ -77,7 +85,7 @@
           </footer>
         </div>
         <div class="hidden col-span-1 md:flex flex-initial relative order-2 text-center md:order-none">
-          <p class="fixed bottom-0 right-10 origin-top-right rotate-90">📍 Based in {{ portfolio.greeting.basedLocation }}</p>
+          <p class="fixed bottom-2 right-10 origin-top-right rotate-90">📍 Based in {{ portfolio.greeting.basedLocation }}</p>
         </div>
         <footer class="block text-center md:hidden order-last mb-5">
             <p>Designed & Created by <a href="https://maximshelepov.com" class="hover:text-link-color">Maxim Shelepov</a></p>
