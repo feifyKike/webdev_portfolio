@@ -31,50 +31,51 @@ Want to add a personal touch to the portfolio? Feel free to open a [pull request
 - [Future](#future)
 - [License](#license)
 
+Check out the [live demo](https://feifykike.github.io/webdev_portfolio/) of the project
+
 ## Getting Started
 
-These instructions will help you get the project up and running on your local machine for your development and use.
+These instructions will help you get the project up and running on your local machine for your development, testing, & eventual deployment. Run all of the commands below in your chosen terminal.
 
-You will need to install [Git](https://github.com/git-guides/install-git), [Node.js](https://github.com/git-guides/install-git), & [npm](https://www.npmjs.com/package/npm) (which usually comes pre-installed with the latest version of Node.js but if not install via MacOS [Homebrew](https://formulae.brew.sh/formula/node#default) or the npm.js homepage)
+### Preparatory setup
+You will need to install [Git](https://github.com/git-guides/install-git), [Node.js](https://nodejs.org/en/download), & [npm](https://www.npmjs.com/package/npm).
 
-### Install necessary project required packages
-
+### Clone the repository
+Using the installed global packages from the previous step...
 ```sh
-npm install
+# Copy this remote repository to your current directory (folder)
+git clone https://github.com/feifyKike/webdev_portfolio.git
+
+# Change into the project folder within your current directory
+cd webdev_portfolio
 ```
 
-### Compile and Hot-Reload for Development
-
+### Install necessary project required packages
 ```sh
-npm run dev
+npm install
 ```
 
 ## How to Use
-
-From the command line, clone the repository run the project.
+Once all is set up, you can start developing by running the vite server and viewing the site from your browser.
+### Compile and Hot-Reload for Development
 ```sh
-# Clone the repository
-git clone https://github.com/feifyKike/webdev_portfolio.git
-
-# Change into the repository within your current directory
-cd webdev_portfolio
-
-# install packages - last step
-npm install
-
-# Start the vite development server
 npm run dev
 
-# Open up the localhost server in your prefered browser
-
-# Set up git locally to push to remote later during deployment stages
-git init
-
-git add .
-
-git commit -m "Initial Commit."
-
+# a localhost:####/webdev_portfolio link should appear -> paste into your browser and view
 ```
+
+### Make commits and push them to your remote fork
+```sh
+git remote add origin https://github.com/YOUR_GITHUB_USERNMAE/webdev_portfolio.git # set a remote repo for git to point to
+git remote -v # shows the set remote
+
+git add . # add all the changes to the stage
+git status # shows all the staged changes
+
+git commit -m "Updating portfolio.js content."
+git push
+```
+🎉 Now watch and enjoy as the latest commit appears in your remote repo and the automatic deployment begins. For deployment, check out the [Deployment](#deployment) section.
 
 ## Customizing Sections
 
@@ -127,9 +128,25 @@ npm run build
 ## Images and Icons
 The images in the [src/assets/images/](https://github.com/feifyKike/webdev_portfolio/tree/main/src/assets/images) project folder are meant to serve as placeholders for your own images. Please intend to replace them with your own image assets.
 
-The project also comes pre-equipped with [heroicons](https://heroicons.com) package (from the makers of tailwind.css) which allows you to use any other additional general purpose icons in the project. In this project, the menu dropdown uses two such icon.
+The project comes pre-equipped with:
+- [heroicons](https://heroicons.com) - Offer nice general-purpose icons. 2 icons used in the menu dropdown.
+    ```html
+    <template>
+        <Bars2Icon class="h-5 w-5 text-blue-500"/> <!-- insert into html like so as a tag -->
+    </template>
+    <script setup>
+    import { Bars2Icon } from '@heroicons/vue/24/solid'
+    <script>
+    ```
+- [fontawesome-icons](https://fontawesome.com) - Using the [font-awesome-brand-icons](https://fontawesome.com/search?o=r&m=free&f=brands). 4 used for social media links.
+    ```html
+    <template>
+        <font-awesome-icon icon="fa-brands fa-icon_name_here"></font-awesome-icon>
+    </template>
+    ```
+    More instructions on adding these icons to your templates can be found here in the [icons.js](./src/icons.js) file.
 
-The social media icons are used link your profiles in connection with the company accounts. Take a look at each of the company logo guidelines for any additional usage details.
+🔭 Take look at [heroicons basic usage](https://github.com/tailwindlabs/heroicons) & [adding icons with fontawesome tutorial](https://fontawesome.com/docs/web/use-with/vue/add-icons) for more details.
 
 ℹ️ All brand icons are trademarks of their respective owners. Do not use brand logos for any purpose except
 to represent the company, product, or service to which they refer.
