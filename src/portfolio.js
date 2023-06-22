@@ -7,8 +7,7 @@ const greeting = {
     intro: "Hello, my name is Maxim Shelepov 👨🏻‍💻",
     message: "I'm a web developer and a computer science student at NC State University",
     basedLocation: "Raleigh, NC",
-    resumeLink: "https://drive.google.com/file/d/1SaE5LK4WsyN6DEYxzO3nGDf12Odrcefi/preview", // recommended: google drive pdf file preview link
-    // Recommended: Please use accurate sizing for the logo image asset as it will NOT be scaled (so if you want 200px x 100px logo, have an appropriately sized image to those dimensions) -> the scaling will be taken care off automatically.
+    resumeLink: "https://docs.google.com/document/d/1Sa_sK3RMusoezzgzxu8LkV16i2Jra2qd/edit?usp=sharing&ouid=113657039181859132688&rtpof=true&sd=true", // recommended: google drive file share link (change to "anyone on the internet can view")
     logoLink: "images/initials.png", // use relative path from  parent directory -> ex: images/image.ext
     portraitLink: 'images/portrait.jpg'
 }
@@ -18,7 +17,7 @@ const socialMediaLinks = {
     linkedin: "https://www.linkedin.com/in/maxim-shelepov1",
     medium: "https://medium.com/@mimaishel",
     stackoverflow: "https://stackoverflow.com/users/13826671/maxim"
-}
+} // to add any additional social media links check out the README or src/icons.js file
 
 // About Section
 const about = {
@@ -49,8 +48,9 @@ const experiences = [
         },
         duration: "Aug 2022 - Present",
         bulletPoints: [
-            "Resolved issues, developed new features and tools for several NC State university web applications.",
-            "Simplified workflows for future testing and deployment of project repositories."
+            "Resolved issues and developed new tools within several university web applications (email automation, research discovery, educational resources, scheduling tools, and text-generative AI news sharing).",
+            "Achieved 100+ github code contributions as an intern on the team.",
+            "Currently rebuilding and modernizing the university digital sign manager and system."
         ],
         hashtags: [
             "Laravel",
@@ -70,8 +70,9 @@ const experiences = [
         },
         duration: "Jan 2022 - Aug 2022",
         bulletPoints: [
-            "Helped students elementary through high school in mathematics via learning plan problems, HW help, and general questions.",
-            "Assisted in guiding the learning plan and assessment of students' knowledge."
+            "Taught math to students elementary through high school covering topics from basic algebra to college-level calculus.",
+            "Directed the trajectory of the student's learning plan and math topic evaluation to facilitate success in their school math class.",
+            "Requested by many students and parents for routine weekly tutoring sessions in a system with a standard random weekly rotation."
         ],
         hashtags: [
             "Calc 1-2",

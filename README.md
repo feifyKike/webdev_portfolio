@@ -40,6 +40,8 @@ These instructions will help you get the project up and running on your local ma
 ### Preparatory setup
 You will need to install [Git](https://github.com/git-guides/install-git), [Node.js](https://nodejs.org/en/download), & [npm](https://www.npmjs.com/package/npm).
 
+Using [brew](https://brew.sh) is recommended for mac users.
+
 ### Clone the repository
 Using the installed global packages from the previous step...
 ```sh
