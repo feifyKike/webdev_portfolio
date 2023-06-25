@@ -131,7 +131,7 @@ npm run build
 The images in the [src/assets/images/](https://github.com/feifyKike/webdev_portfolio/tree/main/src/assets/images) project folder are meant to serve as placeholders for your own images. Please intend to replace them with your own image assets.
 
 The project comes pre-equipped with:
-- [heroicons](https://heroicons.com) - Offer nice general-purpose icons. 2 icons used in the menu dropdown.
+- [heroicons](https://heroicons.com) - Offer nice general-purpose icons. 2 icons used in the menu dropdown and 1 link icon for projects.
     ```html
     <template>
         <Bars2Icon class="h-5 w-5 text-blue-500"/> <!-- insert into html like so as a tag -->

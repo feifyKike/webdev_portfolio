@@ -1,4 +1,4 @@
-// Site Styling (recommendation: choose a color suitable for dark and light modes)
+// Site Styling (recommendation: choose a color suitable for dark and light modes) (https://g.co/kgs/XCcs7T for choosing colors with hex)
 const buttonColor = "#4305ba" // hex color
 const LinkHighlightColor = "#4305ba" // hex color
 
@@ -22,8 +22,8 @@ const socialMediaLinks = {
 // About Section
 const about = {
     autobiography: [
-        "My name is Maxim Shelepov and I'm a Computer Science student at North Carolina State University. I have a passion for coding in languages such as Python, Java, PHP, & Swift. Work in web development and have experience with Django and Laravel frameworks.",
-        "Responsible, organized, problem solver, and independent thinker. Work well in a team and a quick learner. Programming for 3+ years and have 4 years of experience in advanced mathematics such as Calculus, Statistics, and Discrete Mathematics.Currently, working as a web development intern for my University."
+        "My name is Maxim Shelepov and I'm a computer science student at North Carolina State University. I have a passion for coding in languages such as Python, Java, PHP, & Swift. Work in web development and have experience with Django and Laravel frameworks.",
+        "Responsible, organized, problem solver, and independent thinker. Work well in a team and a quick learner. Programming for 3+ years and have 4 years of experience in advanced mathematics such as calculus, statistics, and discrete mathematics. Currently, working as a web development intern for my university."
     ], // Separated items are paragraphs
     techStack: [
         "PHP",

@@ -13,8 +13,11 @@
                 <h3 class="text-xl font-extrabold pb-2">{{ project.projectName }}</h3>
                 <p>{{ project.description }}</p>
                 <p class="text-gray-400">{{ project.techStack }}</p>
-                <div class="flex space-x-4" :class="!project.alignLeft ? 'lg:justify-end' : ''">
-                    <a v-for="link in project.links" :href="link.url" class="hover:text-link-color">{{ link.label }}</a>
+                <div class="flex space-x-8 items-center" :class="!project.alignLeft ? 'lg:justify-end' : ''">
+                    <a v-for="link in project.links" :href="link.url" class="text-gray-500 hover:text-link-color flex items-center space-x-2" target="_blank">
+                        <LinkIcon class="h-5 w-5 text-gray-400"/>
+                        <span>{{ link.label }}</span>
+                    </a>
                 </div>
             </div>
             <div v-if="project.alignLeft" class="order-first pb-4 lg:pb-0 lg:order-none lg:block">
@@ -30,6 +33,7 @@
 <script setup>
 import {ref} from 'vue'
 import LoadTransition from './transitions/LoadTransition.vue';
+import { LinkIcon } from '@heroicons/vue/24/solid';
 
 const props = defineProps({
     project: Object
