@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col gap-y-4 xl:grid xl:grid-cols-2 xl:gap-x-5 xl:gap-y-0 mb-10">
+    <div class="flex flex-col gap-y-4 xl:grid xl:grid-cols-2 xl:gap-x-5 xl:gap-y-0 mb-52">
         <div class="order-2 xl:order-none">
             <p v-for="paragraph in content.autobiography">{{ paragraph }}<br/><br/></p>
             <div>

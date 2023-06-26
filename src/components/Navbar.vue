@@ -38,7 +38,7 @@
 
     <!-- Navbar Dropdown Area -->
     <NavTransition>
-      <div v-show="dropDownActive" class="block w-full lg:hidden px-9 pb-4 md:pb-0 bg-white/[.9] dark:bg-black/[.8]">
+      <div v-show="dropDownActive" class="block w-full lg:hidden px-9 pb-4 bg-white/[.9] dark:bg-black/[.8]">
         <ul>
           <li>
             <router-link class="block py-5 pl-3 hover:text-link-color" to="/#about-section">About</router-link>

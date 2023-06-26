@@ -11,7 +11,7 @@
 
     .dropdown-enter-from,
     .dropdown-leave-to {
-        transform: translateY(-10%);
+        transform: translateY(-5%);
         opacity: 0;
     }
 

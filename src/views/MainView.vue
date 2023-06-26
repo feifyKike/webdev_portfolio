@@ -73,7 +73,7 @@
           <section class="min-h-screen w-full flex flex-col" id="contact-section">
             <div class="relative flex py-5 items-center">
               <div class="flex-grow border-t border-black dark:border-white border-1"></div>
-              <h1 class="text-3xl font-bold px-5">📇 Contact</h1>
+              <h1 class="text-3xl font-bold px-5">📭 Contact</h1>
               <div class="flex-grow border-t border-black dark:border-white border-1"></div>
             </div>
             <ContactView :content="portfolio.contact"/>
