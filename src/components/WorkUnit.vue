@@ -6,6 +6,7 @@
                     @load="showProject = !showProject"
                     :src="getImageUrl(project.imageLink)"
                     class="drop-shadow-lg"
+                    loading="lazy"
                 />
             </div>
             <div class="flex flex-col space-y-4" :class="project.alignLeft ? 'text-left' : 'lg:text-right'">
@@ -25,6 +26,7 @@
                     @load="showProject = !showProject"
                     :src="getImageUrl(project.imageLink)"
                     class="drop-shadow-lg"
+                    loading="lazy"
                 />
             </div>
         </div>

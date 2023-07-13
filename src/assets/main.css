@@ -1,3 +1,4 @@
+/* replace with your own font if need be */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro');
 
 @tailwind base;
@@ -5,7 +6,7 @@
 @tailwind utilities;
 
 #app {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Source Code Pro', monospace; /* also update this if your using another font */
   height: 100%;
   margin: 0;
   width: 100%;

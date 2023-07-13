@@ -4,7 +4,6 @@
     </div>
 </template>
 <script setup>
-
 import ExperienceCard from '../components/ExperienceCard.vue'
 
 const props = defineProps({

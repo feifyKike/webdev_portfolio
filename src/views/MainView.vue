@@ -32,17 +32,17 @@
 					<div class="container mx-auto">
 						<section class="min-h-screen w-full flex justify-center" id="landing-page">
 							<LoadTransition>
-							<div v-show="showIntro" class="flex items-center space-x-0 space-y-7 md:space-y-0 md:space-x-7 flex-col md:flex-row m-auto">
-								<img
-									@load="showIntro = !showIntro"
-									class="w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full drop-shadow-lg"
-									:src="getImageUrl(portfolio.greeting.portraitLink)"
-								/>
-								<div>
-									<h1 class="text-3xl lg:text-4xl font-bold">{{ portfolio.greeting.intro }}</h1>
-									<p>{{ portfolio.greeting.message }}</p>
+								<div v-show="showIntro" class="flex items-center space-x-0 space-y-7 md:space-y-0 md:space-x-7 flex-col md:flex-row m-auto">
+									<img
+										@load="showIntro = !showIntro"
+										class="w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full drop-shadow-lg"
+										:src="getImageUrl(portfolio.greeting.portraitLink)"
+									/>
+									<div>
+										<h1 class="text-3xl lg:text-4xl font-bold">{{ portfolio.greeting.intro }}</h1>
+										<p>{{ portfolio.greeting.message }}</p>
+									</div>
 								</div>
-							</div>
 							</LoadTransition>
 						</section>
 						<section class="min-h-screen w-full" id="about-section">

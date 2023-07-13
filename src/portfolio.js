@@ -23,7 +23,7 @@ const socialMediaLinks = {
 const about = {
     autobiography: [
         "My name is Maxim Shelepov and I'm a computer science student at North Carolina State University. I have a passion for coding in languages such as Python, Java, PHP, & Swift. Work in web development and have experience with Django and Laravel frameworks.",
-        "Responsible, organized, problem solver, and independent thinker. Work well in a team and a quick learner. Programming for 3+ years and have 4 years of experience in advanced mathematics such as calculus, statistics, and discrete mathematics. Currently, working as a web development intern for my university."
+        "Responsible, organized, problem solver, and independent thinker. Work well in a team and a quick learner. Programming for 3+ years and have 4 years of experience in advanced mathematics such as calculus, statistics, and discrete mathematics. Currently working as a web development intern for my university."
     ], // Separated items are paragraphs
     techStack: [
         "PHP",
