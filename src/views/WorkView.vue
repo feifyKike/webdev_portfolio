@@ -18,7 +18,7 @@
                 :class="[visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm', 'transition-all duration-500 motion-reduce:duration-200 motion-reduce:delay-75' + ` delay-[${(parseInt(index)+1)*200}ms]`]"
             />
 
-            <button v-show="showPreview" @click="toggleShowMore" class="w-52 py-2 px-6 mx-auto mt-10 bg-button-color text-white shadow-sm shadow-button-color transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300">{{ showMore ? "Show Less" : "Show More" }}</button>
+            <button v-show="showPreview" @click="toggleShowMore" class="w-52 py-2 px-6 mx-auto mt-10 bg-button-color text-white shadow-sm shadow-button-color transition ease-in-out hover:scale-105 duration-300">{{ showMore ? "Show Less" : "Show More" }}</button>
         </div>
     </section>
 </template>
