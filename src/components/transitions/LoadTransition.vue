@@ -6,7 +6,7 @@
 <style>
     .slide-fade-in-enter-active,
     .slide-fade-in-leave-active {
-        transition: all 0.3s ease-in;
+        transition: all 0.5s ease-in-out;
     }
 
     .slide-fade-in-enter-from,

@@ -1,8 +1,17 @@
-// Site Styling (recommendation: choose a color suitable for dark and light modes) (https://g.co/kgs/XCcs7T for choosing colors with hex)
+// --- Site Styling ---
+// Colors (recommendation: choose a color suitable for dark and light modes)
+// https://g.co/kgs/XCcs7T for choosing colors with hex
 const buttonColor = "#4305ba" // hex color
 const LinkHighlightColor = "#4305ba" // hex color
 
-// Greeting Section
+// Transitions
+const transitions = {
+    active: true, // activate for all sections (landing page is active by default)
+    showOnce: true, // transition only once
+    thresholdOption: 0.15 // indicates at what percentage of the sections visibility the transition should start
+}
+
+// --- Greeting Section ---
 const greeting = {
     intro: "Hello, my name is Maxim Shelepov 👨🏻‍💻",
     message: "I'm a web developer and a computer science student at NC State University",
@@ -19,7 +28,7 @@ const socialMediaLinks = {
     stackoverflow: "https://stackoverflow.com/users/13826671/maxim"
 } // to add any additional social media links check out the README or src/icons.js file
 
-// About Section
+// --- About Section ---
 const about = {
     autobiography: [
         "My name is Maxim Shelepov and I'm a computer science student at North Carolina State University. I have a passion for coding in languages such as Python, Java, PHP, & Swift. Work in web development and have experience with Django and Laravel frameworks.",
@@ -38,7 +47,7 @@ const about = {
     photo3Link: "images/portrait3.jpeg"
 }
 
-// Experience Section
+// --- Experience Section ---
 const experiences = [
     {
         position: "Programming Intern",
@@ -83,7 +92,7 @@ const experiences = [
     }
 ]
 
-// Work Section
+// --- Work Section ---
 const works = [
     {
         projectName: "TrackYourSubs IOS App",
@@ -175,13 +184,13 @@ const works = [
 
 const archiveLink = "https://github.com/feifyKike?tab=repositories"
 
-// Contact Section
+// --- Contact Section ---
 // 2 Options available - Choose 1
 const contact = {
     externalLink: {
         shortTitle: "Get in Touch",
         note: [
-            "Currently seeking web and software development positions/internships in the RTP area for summer 2024.",
+            "Currently seeking web and software development positions/internships in the RTP area for fall 2023 and spring 2024.",
             "Also looking to build a team for project & startup ideas or just make professional connections."
         ], // paragraph breaks will be entered after each item,
         link: {
@@ -196,6 +205,7 @@ const contact = {
 export default {
     buttonColor,
     LinkHighlightColor,
+    transitions,
     greeting,
     socialMediaLinks,
     about,
