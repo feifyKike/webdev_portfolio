@@ -30,7 +30,7 @@
                         <router-link class="block py-2 pl-3 pr-4 hover:text-link-color" to="/#contact-section">Contact</router-link>
                     </li>
                     <li>
-                        <a :href="portfolio.greeting.resumeLink" class="block py-2 px-6 bg-button-color shadow-sm shadow-button-color text-white transition ease-in-out hover:scale-105 duration-300" target="_blank">Resume</a>
+                        <a :href="portfolio.greeting.resumeLink" class="block py-2 px-6 bg-transparent border border-button-color shadow-sm shadow-button-color text-button-color transition ease-in-out hover:bg-button-color hover:text-white duration-300" target="_blank">Resume</a>
                     </li>
                 </ul>
             </div>

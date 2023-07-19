@@ -5,7 +5,7 @@
                 <img
                     @load="showProject = !showProject"
                     :src="getImageUrl(project.imageLink)"
-                    class="drop-shadow-lg"
+                    class="shadow-md"
                     loading="lazy"
                 />
             </div>
@@ -25,7 +25,7 @@
                 <img
                     @load="showProject = !showProject"
                     :src="getImageUrl(project.imageLink)"
-                    class="drop-shadow-lg"
+                    class="shadow-md"
                     loading="lazy"
                 />
             </div>

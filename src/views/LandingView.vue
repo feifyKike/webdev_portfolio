@@ -4,7 +4,7 @@
             <div v-show="showIntro" class="flex items-center space-x-0 space-y-7 md:space-y-0 md:space-x-7 flex-col md:flex-row m-auto">
                 <img
                     @load="showIntro = !showIntro"
-                    class="w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full drop-shadow-lg"
+                    class="w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full shadow-md"
                     :src="getImageUrl(content.portraitLink)"
                 />
                 <div>
