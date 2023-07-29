@@ -1,5 +1,5 @@
 <template>
-    <section class="min-h-screen w-full flex justify-center" id="landing-page">
+    <section class="h-[calc(100vh*0.75)] w-full flex justify-center mb-52" id="landing-page">
         <LoadTransition>
             <div v-show="showIntro" class="flex items-center space-x-0 space-y-7 md:space-y-0 md:space-x-7 flex-col md:flex-row m-auto">
                 <img

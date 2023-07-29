@@ -1,7 +1,7 @@
 <template>
-    <nav class="w-full fixed z-10 transition-transform duration-500" :class="{ '-translate-y-full': !showNavbar }" id="navbar">
+    <nav class="block w-full sticky top-0 z-10 transition-all duration-300" :class="{ '-translate-y-full absolute': !showNavbar }" id="navbar">
         <!-- Navbar Body -->
-        <div class="flex flex-wrap items-center justify-between px-9 md:py-4 bg-white/[.9] dark:bg-black/[.8]">
+        <div class="flex flex-wrap items-center justify-between px-9 md:py-4 bg-white/[.9] dark:bg-slate-900/[.8] backdrop-blur-sm transition-shadow duration-300" :class="{ 'shadow-lg': !hideNavShadow }">
             <router-link to="/#landing-page">
                 <img :src="getImageUrl(portfolio.greeting.logoLink)" class="scale-75 md:scale-100 origin-left drop-shadow-lg" id="logo-img"/>
             </router-link>
@@ -30,7 +30,7 @@
                         <router-link class="block py-2 pl-3 pr-4 hover:text-link-color" to="/#contact-section">Contact</router-link>
                     </li>
                     <li>
-                        <a :href="portfolio.greeting.resumeLink" class="block py-2 px-6 bg-transparent border border-button-color shadow-sm shadow-button-color text-button-color transition ease-in-out hover:bg-button-color hover:text-white duration-300" target="_blank">Resume</a>
+                        <a :href="portfolio.greeting.resumeLink" class="block py-2 px-6 bg-transparent border border-button-color shadow-sm shadow-button-color text-button-color transition ease-in-out hover:bg-button-color hover:text-white hover:dark:text-slate-300 active:bg-button-color duration-300" target="_blank">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -38,19 +38,19 @@
 
         <!-- Navbar Dropdown Area -->
         <NavTransition>
-            <div v-show="dropDownActive" class="block w-full lg:hidden px-9 pb-4 bg-white/[.9] dark:bg-black/[.8]">
+            <div v-show="dropDownActive" class="block w-full absolute lg:hidden px-9 pb-4 bg-white/[.9] dark:bg-slate-900/[.8] backdrop-blur-sm">
                 <ul>
                     <li>
-                        <router-link class="block py-5 pl-3 hover:text-link-color" to="/#about-section">About</router-link>
+                        <router-link class="block py-5 pl-3 hover:text-link-color" to="/#about-section">😎 About</router-link>
                     </li>
                     <li>
-                        <router-link class="block py-5 pl-3 hover:text-link-color" to="/#experience-section">Experience</router-link>
+                        <router-link class="block py-5 pl-3 hover:text-link-color" to="/#experience-section">🛡️ Experience</router-link>
                     </li>
                     <li>
-                        <router-link class="block py-5 pl-3 hover:text-link-color" to="/#work-section">Work</router-link>
+                        <router-link class="block py-5 pl-3 hover:text-link-color" to="/#work-section">💻 Work</router-link>
                     </li>
                     <li>
-                        <router-link class="block py-5 pl-3 hover:text-link-color" to="/#contact-section">Contact</router-link>
+                        <router-link class="block py-5 pl-3 hover:text-link-color" to="/#contact-section">📭 Contact</router-link>
                     </li>
                     <li>
                         <a :href="portfolio.greeting.resumeLink" class="block text-center bg-button-color py-2 px-6 mt-5 shadow-sm shadow-button-color text-white" target="_blank">Resume</a>
@@ -71,6 +71,8 @@ const dropDownActive = ref(false)
 const showNavbar = ref(true)
 const prevScrollPosition = ref(0)
 
+const hideNavShadow = ref(true)
+
 onMounted(() => {
     window.addEventListener('scroll', onScroll)
 })
@@ -81,6 +83,12 @@ onBeforeUnmount(() => {
 
 let onScroll = () => {
     const currScrollPosition = window.scrollY
+
+    if (currScrollPosition <= 60) {
+        hideNavShadow.value = true
+    } else {
+        hideNavShadow.value = false
+    }
 
     if (currScrollPosition < 0 || Math.abs(currScrollPosition - prevScrollPosition.value) < 60) {
         return

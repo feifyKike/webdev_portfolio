@@ -1,14 +1,21 @@
 // --- Site Styling ---
+
 // Colors (recommendation: choose a color suitable for dark and light modes)
-// https://g.co/kgs/XCcs7T for choosing colors with hex
-const buttonColor = "#4305ba" // hex color
-const LinkHighlightColor = "#4305ba" // hex color
+// Should be inputted as a hex value. Use https://g.co/kgs/XCcs7T for choosing colors with hex.
+const colors = {
+    buttonColor: "#4305ba",
+    LinkHighlightColor: "#4305ba",
+    backDropColor: {
+        enabled: true,
+        value: "#4305ba"
+    }
+}
 
 // Transitions
 const transitions = {
     active: true, // activate for all sections (landing page is active by default)
     showOnce: true, // transition only once
-    thresholdOption: 0.15 // indicates at what percentage of the sections visibility the transition should start
+    thresholdOption: 0.25 // indicates at what percentage of the sections visibility the transition should start
 }
 
 // --- Greeting Section ---
@@ -203,8 +210,7 @@ const contact = {
 }
 
 export default {
-    buttonColor,
-    LinkHighlightColor,
+    colors,
     transitions,
     greeting,
     socialMediaLinks,

@@ -15,7 +15,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    html, body {
-        background-color: black;
+    html {
+        background-color: rgb(15, 23, 42);
     }
 }

@@ -2,29 +2,29 @@ import { createRouter, createWebHistory } from 'vue-router'
 import MainView from '../views/MainView.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'main',
-      component: MainView
-    }
-  ],
-  scrollBehavior(to, from, savedPosition) {
-    if (to.hash && to.hash == '#landing-page') {
-      return {
-        top: 0,
-        behavior: 'smooth'
-      }
-    }
-    if (to.hash) {
-      return {
-        el: to.hash,
-        top: isScrollingUp(to.hash) ? getNavHeight() : 0,
-        behavior: 'smooth'
-      }
-    }
-  },
+    history: createWebHistory(import.meta.env.BASE_URL),
+    routes: [
+        {
+            path: '/',
+            name: 'main',
+            component: MainView
+        }
+    ],
+    scrollBehavior(to, from, savedPosition) {
+        if (to.hash && to.hash == '#landing-page') {
+            return {
+                top: 0,
+                behavior: 'smooth'
+            }
+        }
+        if (to.hash) {
+            return {
+                el: to.hash,
+                top: isScrollingUp(to.hash) ? getOffsetHeight() : 0,
+                behavior: 'smooth'
+            }
+        }
+    },
 })
 
 let isScrollingUp = (elem_id) => {
@@ -34,9 +34,9 @@ let isScrollingUp = (elem_id) => {
   return toScrollPos < 0
 }
 
-let getNavHeight = () => {
+let getOffsetHeight = () => {
   const nav = document.querySelector('#logo-img')
-  const navHeight = nav.getBoundingClientRect().height + 10 // accounting for bottom padding
+  const navHeight = nav.getBoundingClientRect().height + 30
 
   return navHeight
 }

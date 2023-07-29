@@ -1,5 +1,5 @@
 <template>
-  	<div class="min-h-screen overscroll-contain bg-white dark:bg-black dark:text-white text-base md:text-xl">
+  	<div class="min-h-screen overscroll-contain bg-white dark:bg-slate-900 dark:text-slate-300 text-base md:text-xl">
 		<Navbar />
 
 		<div class="min-h-full mx-10">
