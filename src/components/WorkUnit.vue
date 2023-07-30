@@ -12,9 +12,9 @@
             <div class="flex flex-col space-y-4" :class="project.alignLeft ? 'text-left' : 'lg:text-right'">
                 <p>{{ project.yearCompleted }}</p>
                 <h3 class="text-xl font-extrabold pb-2">{{ project.projectName }}</h3>
-                <p>{{ project.description }}</p>
-                <p class="text-slate-500">{{ project.techStack }}</p>
-                <div class="flex space-x-8 items-center text-slate-600" :class="!project.alignLeft ? 'lg:justify-end' : ''">
+                <p class="text-slate-500 dark:text-slate-300">{{ project.description }}</p>
+                <p class="text-slate-600">{{ project.techStack }}</p>
+                <div class="flex space-x-8 items-center text-slate-400" :class="!project.alignLeft ? 'lg:justify-end' : ''">
                     <a v-for="link in project.links" :href="link.url" class=" hover:text-link-color flex items-center space-x-2" target="_blank">
                         <LinkIcon class="h-5 w-5"/>
                         <span>{{ link.label }}</span>

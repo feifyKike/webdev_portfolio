@@ -9,7 +9,7 @@
                 />
                 <div>
                     <h1 class="text-3xl lg:text-4xl font-bold">{{ content.intro }}</h1>
-                    <p>{{ content.message }}</p>
+                    <p class="text-slate-500 dark:text-slate-300">{{ content.message }}</p>
                 </div>
             </div>
         </LoadTransition>
