@@ -35,8 +35,8 @@ let isScrollingUp = (elem_id) => {
 }
 
 let getOffsetHeight = () => {
-  const nav = document.querySelector('#logo-img')
-  const navHeight = nav.getBoundingClientRect().height + 30
+  const nav = document.querySelector('nav')
+  const navHeight = nav.getBoundingClientRect().height + 25
 
   return navHeight
 }
