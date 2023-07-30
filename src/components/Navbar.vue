@@ -1,17 +1,28 @@
 <template>
     <nav class="block w-full sticky top-0 z-10 transition-all duration-300" :class="{ '-translate-y-full absolute': !showNavbar }" id="navbar">
         <!-- Navbar Body -->
-        <div class="flex flex-wrap items-center justify-between px-9 md:py-4 bg-white/[.9] dark:bg-slate-900/[.8] backdrop-blur-sm transition-shadow duration-300" :class="{ 'shadow-lg': !hideNavShadow }">
+        <div class="flex flex-wrap items-center justify-between px-9 md:py-4 bg-white/[.9] dark:bg-slate-900 backdrop-blur-sm transition-shadow duration-300" :class="{ 'shadow-lg dark:bg-slate-900/[.8]': !hideNavShadow }">
+            <!-- Logo -->
             <router-link to="/#landing-page">
-                <img :src="getImageUrl(portfolio.greeting.logoLink)" class="scale-75 md:scale-100 origin-left drop-shadow-lg" id="logo-img"/>
+                <div v-if="!portfolio.greeting.logo.custom">
+                    <img :src="getImageUrl(portfolio.greeting.logo.link)" class="scale-75 md:scale-100 origin-left drop-shadow-lg" id="logo-img"/>
+                </div>
+                <!-- Custom Logo -->
+                <div v-else>
+                    <div class="flex items-center space-x-2 py-4 md:py-1 drop-shadow-lg bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent">
+                        <p>&lt;</p>
+                        <p class="text-5xl md:text-7xl" id="custom-logo">M.S.</p>
+                        <p>/></p>
+                    </div>
+                </div>
             </router-link>
 
             <button @click="dropDownActive = !dropDownActive" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 lg:hidden">
                 <div v-if="!dropDownActive">
-                    <Bars2Icon class="h-10 w-10 dark:fill-gray-300"/>
+                    <Bars2Icon class="h-10 w-10 dark:fill-slate-300"/>
                 </div>
                 <div v-else>
-                    <XMarkIcon class="h-10 w-10 dark:fill-gray-300"/>
+                    <XMarkIcon class="h-10 w-10 dark:fill-slate-300"/>
                 </div>
             </button>
 

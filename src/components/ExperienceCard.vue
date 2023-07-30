@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col flex-1 rounded-md bg-white shadow-md hover:shadow-xl dark:bg-slate-800 text-left p-4">
+    <div class="flex flex-col flex-1 rounded-md bg-white shadow-md hover:shadow-xl hover:-translate-y-1 motion-reduce:hover:translate-y-0 motion-reduce:hover:shadow-md dark:bg-slate-800 text-left p-4">
         <h3 class="text-xl font-extrabold">{{ experience.position }} <a :href="experience.company.link" class="hover:text-link-color">@{{ experience.company.name }}</a></h3>
         <p class="italic">{{ experience.duration }}</p>
         <ul class="list-image-[url(../components/icons/bullet_point.png)] pl-8 pt-4">

@@ -15,16 +15,19 @@ const colors = {
 const transitions = {
     active: true, // activate for all sections (landing page is active by default)
     showOnce: true, // transition only once
-    thresholdOption: 0.25 // indicates at what percentage of the sections visibility the transition should start
+    thresholdOption: 0.2 // indicates at what percentage of the sections visibility the transition should start
 }
 
-// --- Greeting Section ---
+// --- 👋 Greeting Section ---
 const greeting = {
     intro: "Hello, my name is Maxim Shelepov 👨🏻‍💻",
     message: "I'm a web developer and a computer science student at NC State University",
     basedLocation: "Raleigh, NC",
     resumeLink: "https://docs.google.com/document/d/1Sa_sK3RMusoezzgzxu8LkV16i2Jra2qd/edit?usp=sharing&ouid=113657039181859132688&rtpof=true&sd=true", // recommended: google drive file share link (change to "anyone on the internet can view")
-    logoLink: "images/initials.png", // use relative path from  parent directory -> ex: images/image.ext
+    logo: {
+        link: "images/initials.png", // use relative path from  parent directory -> ex: images/image.ext
+        custom: true // takes precedence over image logo and allows for custom HTML logo (./components/Navbar.vue)
+    },
     portraitLink: 'images/portrait.jpg'
 }
 
@@ -35,7 +38,7 @@ const socialMediaLinks = {
     stackoverflow: "https://stackoverflow.com/users/13826671/maxim"
 } // to add any additional social media links check out the README or src/icons.js file
 
-// --- About Section ---
+// --- 😎 About Section ---
 const about = {
     autobiography: [
         "My name is Maxim Shelepov and I'm a computer science student at North Carolina State University. I have a passion for coding in languages such as Python, Java, PHP, & Swift. Work in web development and have experience with Django and Laravel frameworks.",
@@ -54,7 +57,7 @@ const about = {
     photo3Link: "images/portrait3.jpeg"
 }
 
-// --- Experience Section ---
+// --- 🛡️ Experience Section ---
 const experiences = [
     {
         position: "Programming Intern",
@@ -99,7 +102,7 @@ const experiences = [
     }
 ]
 
-// --- Work Section ---
+// --- 💻 Work Section ---
 const works = [
     {
         projectName: "TrackYourSubs IOS App",
@@ -191,7 +194,7 @@ const works = [
 
 const archiveLink = "https://github.com/feifyKike?tab=repositories"
 
-// --- Contact Section ---
+// --- 📭 Contact Section ---
 // 2 Options available - Choose 1
 const contact = {
     externalLink: {

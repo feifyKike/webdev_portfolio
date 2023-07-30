@@ -1,5 +1,5 @@
-/* replace with your own font if need be */
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro');
+/* replace with your own fonts if need be */
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Source+Code+Pro');
 
 @tailwind base;
 @tailwind components;
@@ -12,6 +12,11 @@
     margin: 0;
     width: 100%;
     scroll-behavior: smooth;
+}
+
+/* Custom HTML & CSS Logo */
+#custom-logo {
+    font-family: 'Reenie Beanie', cursive;
 }
 
 @media (prefers-color-scheme: dark) {

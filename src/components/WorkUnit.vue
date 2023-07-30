@@ -5,7 +5,7 @@
                 <img
                     @load="showProject = !showProject"
                     :src="getImageUrl(project.imageLink)"
-                    class="shadow-md"
+                    class="shadow-md hover:shadow-lg hover:-translate-y-1 motion-reduce:hover:shadow-md motion-reduce:hover:translate-y-0 duration-300"
                     loading="lazy"
                 />
             </div>
@@ -25,7 +25,7 @@
                 <img
                     @load="showProject = !showProject"
                     :src="getImageUrl(project.imageLink)"
-                    class="shadow-md"
+                    class="shadow-md hover:shadow-lg hover:-translate-y-1 motion-reduce:hover:shadow-md motion-reduce:hover:translate-y-0 duration-300"
                     loading="lazy"
                 />
             </div>
