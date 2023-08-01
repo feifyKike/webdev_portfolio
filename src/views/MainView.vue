@@ -7,25 +7,25 @@
 		<div class="min-h-full mx-10">
 			<div class="flex flex-col md:grid md:grid-cols-6 min-h-full">
 				<div class="col-span-1 flex-initial relative mx-auto md:mx-0 order-2 md:order-none">
-					<ul class="md:fixed md:bottom-0 mb-7 flex items-center space-x-4 md:flex-col md:space-y-4 md:space-x-0">
+					<ul class="md:fixed md:bottom-0 mb-7 flex items-center space-x-8 md:flex-col md:space-y-4 md:space-x-0">
 						<li v-show="githubLink.length">
 							<a :href="githubLink" target="_blank">
-								<font-awesome-icon icon="fa-brands fa-github" class="h-12 w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
+								<font-awesome-icon icon="fa-brands fa-github" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
 							</a>
 						</li>
 						<li v-show="linkedinLink.length">
 							<a :href="linkedinLink" target="_blank">
-								<font-awesome-icon icon="fa-brands fa-linkedin" class="h-12 w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
+								<font-awesome-icon icon="fa-brands fa-linkedin" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
 							</a>
 						</li>
 						<li v-show="mediumLink.length">
 							<a :href="mediumLink" target="_blank">
-								<font-awesome-icon icon="fa-brands fa-medium" class="h-12 w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
+								<font-awesome-icon icon="fa-brands fa-medium" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
 							</a>
 						</li>
 						<li v-show="stackoverflowLink.length">
 							<a :href="stackoverflowLink" target="_blank">
-								<font-awesome-icon icon="fa-brands fa-stack-overflow" class="h-12 w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
+								<font-awesome-icon icon="fa-brands fa-stack-overflow" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
 							</a>
 						</li>
 					</ul>

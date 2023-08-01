@@ -12,7 +12,7 @@
             <div v-else class="space-y-8 mx-auto">
                 <h1 class="text-3xl font-extrabold text-center">Get in Touch</h1>
                 <p v-for="msg in content.externalLink.note" class="text-slate-500 dark:text-slate-300">{{ msg }}<br/></p>
-                <div class="block sm:flex sm:items-center sm:justify-center sm:space-x-5">
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-5 sm:space-x-5">
                     <template v-if="content.externalLink.link.email">
                         <a :href="'mailto:'+content.externalLink.link.email">
                             <button class="py-2 px-6 bg-transparent border border-button-color shadow-sm shadow-button-color text-button-color hover:text-white hover:bg-button-color duration-300">Send an Email</button>
