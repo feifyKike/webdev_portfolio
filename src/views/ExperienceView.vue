@@ -9,7 +9,7 @@
                 v-for="(experience, index) in content"
                 :key="index" :experience="experience"
                 :class="[visible ? 'translate-y-0 opacity-1 blur-0' :
-                    'translate-y-4 opacity-0 blur-sm', 'transition-all duration-500 motion-reduce:duration-200 motion-reduce:delay-75' + ` delay-[${(parseInt(index)+1)*200}ms]`]"
+                    'translate-y-4 opacity-0 blur-sm', 'transition-all duration-500 motion-reduce:duration-200 motion-reduce:delay-75']"
             />
         </div>
     </section>

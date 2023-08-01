@@ -4,11 +4,7 @@
 // Should be inputted as a hex value. Use https://g.co/kgs/XCcs7T for choosing colors with hex.
 const colors = {
     buttonColor: "#4305ba",
-    LinkHighlightColor: "#4305ba",
-    backDropColor: {
-        enabled: true,
-        value: "#4305ba"
-    }
+    LinkHighlightColor: "#4305ba"
 }
 
 // Transitions

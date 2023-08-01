@@ -4,7 +4,7 @@
             <div class="flex w-full space-x-2 items-center">
                 <div class="flex w-full relative items-center justify-between py-4">
                     <span>[</span>
-                    <p class="text-left w-[20ch]">{{ hashtags.join('') }}</p>
+                    <p class="text-left w-[20ch]">{{ hashtags.join('') }}</p> <!-- Change width if changing max value -->
                     <span class="ml-auto">]</span>
                 </div>
                 <p>{{ percentage }}%</p>
