@@ -5,17 +5,15 @@
             <div class="flex-grow border-t border-black dark:border-white border-1"></div>
             <a :href="portfolio.archiveLink" class="pl-2 sm:pl-5 hover:text-link-color text-right">Visit Archive</a>
         </div>
-        <div class="flex flex-col space-y-12 mb-52" :class="[visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm', 'transition-all duration-500 motion-reduce:duration-200']">
+        <div class="flex flex-col space-y-12 mb-52" :class="[visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm', 'transition-all duration-500 delay-300 motion-reduce:duration-200 motion-reduce:delay-75']">
             <WorkUnit
                 v-for="(project, index) in projInitial"
                 :key="index" :project="project"
-                :class="[visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm', 'transition-all duration-500 motion-reduce:duration-200 motion-reduce:delay-75']"
             />
             <WorkUnit
                 v-if="showMore"
                 v-for="(project, index) in content"
                 :key="index" :project="project"
-                :class="[visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm', 'transition-all duration-500 motion-reduce:duration-200 motion-reduce:delay-75']"
             />
 
             <button v-show="showPreview" @click="toggleShowMore" class="w-52 py-2 px-6 mx-auto mt-10 bg-transparent border border-button-color text-button-color shadow-sm shadow-button-color transition ease-in-out hover:bg-button-color hover:text-white duration-300">
