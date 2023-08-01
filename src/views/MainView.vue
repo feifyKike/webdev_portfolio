@@ -42,7 +42,7 @@
 
 						<ContactView :content="portfolio.contact" :transitions="portfolio.transitions" />
 
-						<footer class="hidden text-center md:block">
+						<footer class="hidden text-center md:block mb-5">
 							<p>🚀 Designed & Created by <a href="https://maximshelepov.com" class="hover:text-link-color">Maxim Shelepov</a></p>
 							<a href="https://github.com/feifyKike/webdev_portfolio" class="hover:text-link-color">Code available on Github 👾</a>
 						</footer>
