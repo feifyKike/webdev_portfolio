@@ -18,6 +18,9 @@ const transitions = {
     thresholdOption: 0.2 // indicates at what percentage of the sections visibility the transition should start
 }
 
+// Splash Screen
+const splashScreen = true // recommended: for best behavior after refresh
+
 // --- 👋 Greeting Section ---
 const greeting = {
     intro: "Hello, my name is Maxim Shelepov 👨🏻‍💻",
@@ -205,16 +208,17 @@ const contact = {
         ], // paragraph breaks will be entered after each item,
         link: {
             email: "", // email takes precedance
-            other: ""
+            other: "https://forms.gle/W3MswTKsPWMxEbn58"
         },
         responseTimeMessage: "...and I'll resopnd within the next 24hrs"
     },
-    formEmbedLink: "https://docs.google.com/forms/d/e/1FAIpQLSfvEu3_VYha6z6ppqmgrgJsbnAfdNtXu2nB8IqBSQJlX-4vaA/viewform?embedded=true" // inclusion of this link will take precedance
+    formEmbedLink: "" // inclusion of this link will take precedance
 }
 
 export default {
     colors,
     transitions,
+    splashScreen,
     greeting,
     socialMediaLinks,
     about,

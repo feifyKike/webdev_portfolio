@@ -8,10 +8,10 @@ module.exports = {
     ],
     theme: {
         extend: {
-        colors: {
-            'button-color': portfolio.colors.buttonColor,
-            'link-color': portfolio.colors.LinkHighlightColor
-        }
+            colors: {
+                'button-color': portfolio.colors.buttonColor,
+                'link-color': portfolio.colors.LinkHighlightColor
+            }
         },
     },
     plugins: [],

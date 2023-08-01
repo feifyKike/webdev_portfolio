@@ -1,5 +1,7 @@
 <template>
-  	<div class="min-h-screen overscroll-contain bg-white dark:bg-slate-900 dark:text-slate-300 text-base md:text-xl">
+	<SplashView v-if="showingSplash"/>
+
+  	<div v-show="!showingSplash" class="min-h-screen overscroll-contain bg-white dark:bg-slate-900 dark:text-slate-300 text-base md:text-xl">
 		<Navbar />
 
 		<div class="min-h-full mx-10">
@@ -59,14 +61,30 @@
 </template>
 
 <script setup>
+import { onMounted, ref } from 'vue'
+import { useRouter } from 'vue-router'
+
 import Navbar from '../components/Navbar.vue'
 import LandingView from './LandingView.vue'
 import AboutView from './AboutView.vue'
 import ExperienceView from './ExperienceView.vue'
 import WorkView from './WorkView.vue'
 import ContactView from './ContactView.vue'
+import SplashView from './SplashView.vue'
 
 import portfolio from '../portfolio'
+
+const router = useRouter()
+const showingSplash = ref(portfolio.splashScreen)
+
+onMounted(() => {
+	if (portfolio.splashScreen) {
+		setTimeout(() => {
+			showingSplash.value = false
+			router.push(window.location.hash)
+		}, 1500)
+	}
+})
 
 // Social Media Links
 const githubLink = portfolio.socialMediaLinks.github

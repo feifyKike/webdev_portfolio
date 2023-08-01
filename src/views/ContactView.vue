@@ -20,7 +20,7 @@
                         <p class="text-sm mt-8 sm:mt-0 text-slate-500 dark:text-slate-300">{{ content.externalLink.responseTimeMessage }}</p>
                     </template>
                     <template v-else>
-                        <a :href="content.externalLink.link.externalLink">
+                        <a :href="content.externalLink.link.other" target="_blank">
                             <button class="py-2 px-6 bg-transparent border border-button-color shadow-sm shadow-button-color text-button-color hover:text-white hover:bg-button-color duration-300">Reach Out</button>
                         </a>
                     </template>
