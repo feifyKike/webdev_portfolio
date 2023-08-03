@@ -39,7 +39,7 @@ const status = ref(0)
 const progress = () => {
     if (hashtags.value.length == 0) {
         hashtags.value.push(character)
-        const interval = setInterval(advance, 50)
+        const interval = setInterval(advance, 65)
     }
 }
 const advance = () => {

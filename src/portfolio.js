@@ -1,4 +1,4 @@
-// --- Site Styling ---
+// --- 🎨 Site Styling ---
 
 // Colors (recommendation: choose a color suitable for dark and light modes)
 // Should be inputted as a hex value. Use https://g.co/kgs/XCcs7T for choosing colors with hex.
@@ -9,7 +9,8 @@ const colors = {
 
 // Transitions
 const transitions = {
-    active: true, // activate for all sections (landing page is active by default)
+    active: true, // activate for all sections
+    onlyLanding: false, // activate only for initial load of landing page
     showOnce: true, // transition only once
     thresholdOption: 0.2 // indicates at what percentage of the sections visibility the transition should start
 }
@@ -35,7 +36,7 @@ const socialMediaLinks = {
     linkedin: "https://www.linkedin.com/in/maxim-shelepov1",
     medium: "https://medium.com/@mimaishel",
     stackoverflow: "https://stackoverflow.com/users/13826671/maxim"
-} // to add any additional social media links check out the README or src/icons.js file
+} // to add any additional social media links check out the README.md or src/icons.js file
 
 // --- 😎 About Section ---
 const about = {
