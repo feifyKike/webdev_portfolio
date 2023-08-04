@@ -1,11 +1,11 @@
 <template>
     <section class="min-h-screen w-full flex flex-col" ref="contactSection" id="contact-section">
-        <div class="relative flex py-5 items-center" :class="[visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm', 'transition-all duration-500 motion-reduce:duration-200']">
+        <div class="relative flex py-5 items-center" :class="[visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm', 'transition-all motion-reduce:transition-none duration-500']">
             <div class="flex-grow border-t border-black dark:border-white border-1"></div>
             <h1 class="text-3xl font-bold px-5">📭 Contact</h1>
             <div class="flex-grow border-t border-black dark:border-white border-1"></div>
         </div>
-        <div class="flex flex-col my-auto" :class="[visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm', 'transition-all duration-500 motion-reduce:duration-200 delay-300 motion-reduce:delay-75']">
+        <div :class="['flex flex-col my-auto transition-all motion-reduce:transition-none duration-500 delay-300', visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm']">
             <div v-if="content.formEmbedLink">
                 <iframe :src="content.formEmbedLink" frameborder="0" marginheight="0" marginwidth="0" class="mb-10 min-h-screen w-full">Loading...</iframe>
             </div>
@@ -39,6 +39,6 @@ const props = defineProps({
 })
 
 const contactSection = ref({})
-const visible = props.transitions.active ? onIntersect(contactSection, !!props.transitions.showOnce, { threshold: props.transitions.thresholdOption }) : true
+const visible = props.transitions.active && window.matchMedia('(prefers-reduced-motion: no-preference)').matches ? onIntersect(contactSection, !!props.transitions.showOnce, { threshold: props.transitions.thresholdOption }) : true
 
 </script>

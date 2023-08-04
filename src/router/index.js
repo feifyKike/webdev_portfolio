@@ -14,14 +14,14 @@ const router = createRouter({
         if (to.hash && to.hash == '#landing-page') {
             return {
                 top: 0,
-                behavior: 'smooth'
+                behavior: window.matchMedia('(prefers-reduced-motion: no-preference)').matches ? 'smooth' : 'instant'
             }
         }
         if (to.hash) {
             return {
                 el: to.hash,
                 top: isScrollingUp(to.hash) ? getOffsetHeight() : 0,
-                behavior: 'smooth'
+                behavior: window.matchMedia('(prefers-reduced-motion: no-preference)').matches ? 'smooth' : 'instant'
             }
         }
     },

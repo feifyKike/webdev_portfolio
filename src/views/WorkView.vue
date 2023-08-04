@@ -1,11 +1,11 @@
 <template>
     <section class="min-h-screen w-full" ref="workSection" id="work-section">
-        <div class="relative flex py-5 items-center" :class="[visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm', 'transition-all duration-500 motion-reduce:duration-200']">
+        <div class="relative flex py-5 items-center" :class="[visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm', 'transition-all motion-reduce:transition-none duration-500']">
             <h1 class="text-3xl font-bold pr-2 sm:pr-5">💻 Work</h1>
             <div class="flex-grow border-t border-black dark:border-white border-1"></div>
             <a :href="portfolio.archiveLink" class="pl-2 sm:pl-5 hover:text-link-color text-right">Visit Archive</a>
         </div>
-        <div class="flex flex-col space-y-12 mb-52" :class="[visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm', 'transition-all duration-500 delay-300 motion-reduce:duration-200 motion-reduce:delay-75']">
+        <div :class="['flex flex-col space-y-12 mb-52 transition-all motion-reduce:transition-none duration-500 delay-300', visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm']">
             <WorkUnit
                 v-for="(project, index) in projInitial"
                 :key="index" :project="project"
@@ -41,7 +41,7 @@ const showMore = ref(false)
 const projInitial = showPreview ? props.content.splice(0, 3) : props.content
 
 const workSection = ref({})
-const visible = props.transitions.active ? onIntersect(workSection, !!props.transitions.showOnce, { threshold: props.transitions.thresholdOption }) : true
+const visible = props.transitions.active && window.matchMedia('(prefers-reduced-motion: no-preference)').matches ? onIntersect(workSection, !!props.transitions.showOnce, { threshold: props.transitions.thresholdOption }) : true
 
 let toggleShowMore = () => {
     showMore.value = !showMore.value

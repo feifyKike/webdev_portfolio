@@ -8,22 +8,22 @@
 			<div class="flex flex-col md:grid md:grid-cols-6 min-h-full">
 				<div class="col-span-1 flex-initial relative mx-auto md:mx-0 order-2 md:order-none">
 					<ul class="md:fixed md:bottom-0 mb-7 flex items-center space-x-8 md:flex-col md:space-y-4 md:space-x-0">
-						<li v-show="githubLink.length" :class="['transition-all duration-500', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
+						<li v-show="githubLink.length" :class="['transition-all motion-reduce:transition-none duration-500', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
 							<a :href="githubLink" target="_blank">
 								<font-awesome-icon icon="fa-brands fa-github" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
 							</a>
 						</li>
-						<li v-show="linkedinLink.length" :class="['transition-all duration-500 delay-[100ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
+						<li v-show="linkedinLink.length" :class="['transition-all motion-reduce:transition-none duration-500 delay-[100ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
 							<a :href="linkedinLink" target="_blank">
 								<font-awesome-icon icon="fa-brands fa-linkedin" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
 							</a>
 						</li>
-						<li v-show="mediumLink.length" :class="['transition-all duration-500 delay-[150ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
+						<li v-show="mediumLink.length" :class="['transition-all motion-reduce:transition-none duration-500 delay-[150ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
 							<a :href="mediumLink" target="_blank">
 								<font-awesome-icon icon="fa-brands fa-medium" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
 							</a>
 						</li>
-						<li v-show="stackoverflowLink.length" :class="['transition-all duration-500 delay-[200ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
+						<li v-show="stackoverflowLink.length" :class="['transition-all motion-reduce:transition-none duration-500 delay-[200ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
 							<a :href="stackoverflowLink" target="_blank">
 								<font-awesome-icon icon="fa-brands fa-stack-overflow" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
 							</a>
@@ -50,7 +50,7 @@
 					</div>
 				</div>
 				<div class="hidden col-span-1 md:flex flex-initial relative order-2 text-center md:order-none">
-					<p :class="['fixed bottom-2 right-10 origin-top-right rotate-90 transition-all duration-500', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">📍 Based in {{ portfolio.greeting.basedLocation }}</p>
+					<p :class="['fixed bottom-2 right-10 origin-top-right rotate-90 transition-all motion-reduce:transition-none duration-500', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">📍 Based in {{ portfolio.greeting.basedLocation }}</p>
 				</div>
 				<footer class="block text-center text-sm md:hidden order-last mb-5">
 					<p>🚀 Designed & Created by <a href="https://maximshelepov.com" class="hover:text-link-color" target="_blank">Maxim Shelepov</a></p>
