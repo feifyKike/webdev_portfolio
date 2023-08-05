@@ -3,15 +3,15 @@
 ## A modern, clean, & simple to navigate portfolio template for web developers (or any developer)!
 
 ### Includes Pertinent Sections for any Web Developer Portfolio:
-✅ Name & Introduction\
-✅ About\
-✅ Experience\
-✅ Projects / Work\
-✅ Contact
+✔️ Name & Introduction\
+✔️ About\
+✔️ Experience\
+✔️ Projects / Work\
+✔️ Contact
 
-To add your own info into the template just alter the `src/portfolio.js` file variables. More customization options will come & be incorporated in the future 🔮.
+To add your own info into the template just alter the [src/portfolio.js](src/portfolio.js) file variables. More customization options will come & be incorporated in the future 🔮.
 
-If you have any suggestions on what else you want to be customized through the `portfolio.js` file or added / changed in general please feel free to reach out through the hosted page [contact form](https://forms.gle/vhWrKD32i1d2MSZGA) or leave an issue.
+If you have any suggestions on what else you want to be customized through the [portfolio.js](src/portfolio.js) file or added / changed in general please feel free to reach out through the hosted page [contact form](https://forms.gle/vhWrKD32i1d2MSZGA) or leave an issue.
 
 If you would like to contribute to the project take a look at the [Issues](https://github.com/feifyKike/webdev_portfolio/issues).
 
@@ -31,7 +31,7 @@ Want to add a personal touch to the portfolio? Feel free to open a [pull request
 - [Future](#future)
 - [License](#license)
 
-Check out the [live demo](https://feifykike.github.io/webdev_portfolio/) of the project
+Check out the [live demo](https://feifykike.github.io/webdev_portfolio/) of the project.
 
 ## Getting Started
 
@@ -69,6 +69,7 @@ npm run dev
 ```
 
 ### Make commits and push them to your remote repository
+Before adding and pushing to your remote repository you should [create it first in github](https://docs.github.com/en/get-started/quickstart/create-a-repo).
 ```sh
 git remote add origin https://github.com/YOUR_GITHUB_USERNMAE/webdev_portfolio.git # set a remote repo for git to point to
 git remote -v # shows the set remote
@@ -121,12 +122,13 @@ npm run build
 ```
 
 ### To deploy on Github Pages
-1. Add your cloned repository to github.
-    - [Set remote repository](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#remotes-and-forks) for git to point to & [push commits to remote](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-2. The github workflow `deploy.yml` file should automatically start the build process for deployment to your github pages url: `https://<GITHUB_USERNAME>.github.io/<REPO_NAME>`
-    - For confirmation that the build succeeded take a look at the status (check or X) near the latest commit.
-    - If permission errors take a look at the settings page and give the github actions permission to **read & write**.
-3. Enjoy & Good Luck!
+1. For fontawesome icons to work on the deployed site, visit *Settings -> Secrets and Variables -> Actions* and add your unique fontawesome registry auth token which can be found in your `~/.npmrc` or `webdev_portfolio/.npmrc` file ([more info about github action secrets here](https://docs.github.com/en/actions/security-guides/encrypted-secrets)).
+2. In the *Settings -> Actions -> General -> Workflow Permissions* set the github actions permission to **read & write**.
+3. Make sure you set up git properly locally, created a remote repository, and are prepared to push to that remote. Take a look at [getting started section](#getting-started). For more information check out:
+    - [Setting remote repository](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#remotes-and-forks).
+    - [Pushing commits to remote](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push).
+
+The github workflow [deploy.yml](.github/workflows/deploy.yml) file should automatically start the build process for deployment to your github pages url: `https://<GITHUB_USERNAME>.github.io/webdev_portfolio/` after you push to the main branch of your remote repository. Enjoy & Good Luck!
 
 ## Technologies Used
 - [Vue.js](https://vuejs.org)
@@ -137,7 +139,7 @@ npm run build
 The images in the [src/assets/images/](https://github.com/feifyKike/webdev_portfolio/tree/main/src/assets/images) project folder are meant to serve as placeholders for your own images. Please intend to replace them with your own image assets.
 
 The project comes pre-equipped with:
-- [heroicons](https://heroicons.com) - Offer nice general-purpose icons. 2 icons used in the menu dropdown and 1 link icon for projects.
+- [heroicons](https://heroicons.com) - Offer nice general-purpose icons. 2 icons used in the menu dropdown and 3 icons for project links.
     ```html
     <template>
         <Bars2Icon class="h-5 w-5 text-blue-500"/> <!-- insert into html like so as a tag -->
@@ -165,9 +167,7 @@ Hope to continue improving the site, as well as adding more components and layou
 **Planned Future Improvements:**
 - [ ] Add more layout components to `src/components`.
 - [ ] More color scheme styling options in `src/portfolio.js`.
-- [ ] More text and animation styling control in `src/portfolio.js`.
-
-... and more
+- [x] ~~More text and animation styling control in `src/portfolio.js`~~.
 
 💡 Leave your own ideas in the [issues](https://github.com/feifyKike/webdev_portfolio/issues) section or complete my [contact form](https://forms.gle/vhWrKD32i1d2MSZGA).
 
