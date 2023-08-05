@@ -37,7 +37,7 @@ Check out the [live demo](https://feifykike.github.io/webdev_portfolio/) of the 
 
 These instructions will help you get the project up and running on your local machine for your development, testing, & eventual deployment. Run all of the commands below in your chosen terminal.
 
-⚡️ **A speedier but less future customizable alternative** would be to [fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo) and then make your updates to the `portfolio.js` file via Github and then committing your changes which will automatically trigger a build process. Check step #2 of [deploy to Github Pages](#To-deploy-on-Github-Pages) for further instructions.
+⚡️ **A speedier but less future customizable alternative** would be to [fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo) and then make your updates to the [portfolio.js](src/portfolio.js) file via Github and then committing your changes which will automatically trigger a build process. Check step #2 of [deploy to Github Pages](#To-deploy-on-Github-Pages) for further instructions.
 
 ### Preparatory setup
 You will need to install [Git](https://github.com/git-guides/install-git), [Node.js](https://nodejs.org/en/download), & [npm](https://www.npmjs.com/package/npm).
@@ -87,7 +87,7 @@ git push
 To personalize the template site to your content you can:
 1. Populate your own information, appearance settings, & site behavioral setting in [src/portfolio.js](src/portfolio.js).
 2. Change the [index.html](index.html) `<title></title>` tag to whatever text you want others to see in the browser tab (ex: name, title, etc.).
-3. Add your own `favicon.ico` and `favicon.png` in the `public/` folder or **feel free to use the current emoji favicon** (the icon that will appear in the browser tab next to the title).
+3. Add your own `favicon.ico` and `favicon.png` in the [public/](public) folder or **feel free to use the current emoji favicon** (the icon that will appear in the browser tab next to the title).
 4. Optional: Use different global font for the site. You can choose one from [google fonts](https://fonts.google.com) and then replace the import link in the [main.css](src/assets/main.css) file.
 
 ```javascript
@@ -162,7 +162,7 @@ The project comes pre-equipped with:
 to represent the company, product, or service to which they refer.
 
 ## Future
-Hope to continue improving the site, as well as adding more components and layout options in the `src/components` folder.
+Hope to continue improving the site, as well as adding more components and layout options in the [src/components](src/components) folder.
 
 **Planned Future Improvements:**
 - [ ] Add more layout components to `src/components`.
