@@ -17,14 +17,14 @@
             <div class="grid grid-rows-2 gap-y-4 order-1 xl:order-none">
                 <div class="grid grid-cols-2 gap-x-4">
                     <div>
-                        <img :src="getImageUrl(content.photo1Link)" class="shadow-md hover:shadow-lg hover:-translate-y-1 motion-reduce:hover:shadow-none motion-reduce:hover:translate-y-0 transition-all duration-300" loading="lazy"/>
+                        <img :src="getImageUrl(content.photo1Link)" class="shadow-md" loading="lazy"/>
                     </div>
                     <div>
-                        <img :src="getImageUrl(content.photo2Link)" class="shadow-md hover:shadow-lg hover:-translate-y-1 motion-reduce:hover:shadow-none motion-reduce:hover:translate-y-0 transition-all duration-300" loading="lazy"/>
+                        <img :src="getImageUrl(content.photo2Link)" class="shadow-md" loading="lazy"/>
                     </div>
                 </div>
                 <div>
-                    <img :src="getImageUrl(content.photo3Link)" class="shadow-md hover:shadow-lg hover:-translate-y-1 motion-reduce:hover:shadow-none motion-reduce:hover:translate-y-0 transition-all duration-300" loading="lazy"/>
+                    <img :src="getImageUrl(content.photo3Link)" class="shadow-md" loading="lazy"/>
                 </div>
             </div>
         </div>

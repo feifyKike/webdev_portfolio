@@ -22,7 +22,7 @@ const splashScreen = true // recommended: for best behavior after refresh
 const greeting = {
     intro: "Hello 👋, my name is",
     name: "Maxim Shelepov",
-    message: "I'm a web developer and a computer science student at NC State University",
+    message: "I'm a computer science student and an aspiring software engineer. Currently working as a web developer at my university building tools to aid students, educators, and staff.",
     basedLocation: "Raleigh, NC",
     resumeLink: "https://docs.google.com/document/d/1Sa_sK3RMusoezzgzxu8LkV16i2Jra2qd/edit?usp=sharing&ouid=113657039181859132688&rtpof=true&sd=true", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
@@ -61,7 +61,7 @@ const about = {
 // --- 🛡️ Experience Section ---
 const experiences = [
     {
-        position: "Programming Intern",
+        position: "Web Dev Intern",
         company: {
             name: "WolfTech",
             link: "https://tools.wolftech.ncsu.edu/support/index.php/WolfTech_Information_Technology"
@@ -112,12 +112,14 @@ const works = [
         techStack: "Swift, SwiftUI",
         links: [
             {
-                label: "Demo",
-                url: "https://youtu.be/KsTx-F70OOk"
+                label: "",
+                type: "git",
+                url: "https://github.com/feifyKike/TrackYourSubsDemo/"
             },
             {
-                label: "Github",
-                url: "https://github.com/feifyKike/TrackYourSubsDemo/"
+                label: "",
+                type: "external",
+                url: "https://youtu.be/KsTx-F70OOk"
             }
         ],
         imageLink: "images/tracksubs_pic.png",
@@ -130,7 +132,8 @@ const works = [
         techStack: "Django, Python, HTML, CSS, JS",
         links: [
             {
-                label: "Live Demo",
+                label: "",
+                type: "external",
                 url: "https://maximshelepov.com"
             }
         ],
@@ -144,12 +147,14 @@ const works = [
         techStack: "Java",
         links: [
             {
-                label: "Demo",
-                url: "https://youtu.be/lXOjOrjf5hU"
+                label: "",
+                type: "git",
+                url: "https://github.com/feifyKike/sudokusolver"
             },
             {
-                label: "Github",
-                url: "https://github.com/feifyKike/sudokusolver"
+                label: "",
+                type: "external",
+                url: "https://youtu.be/lXOjOrjf5hU"
             }
         ],
         imageLink: "images/sudoku_pic.png",
@@ -162,12 +167,14 @@ const works = [
         techStack: "JS, HTML, CSS",
         links: [
             {
-                label: "Demo",
-                url: "https://codepen.io/Max_the_coder/pen/yLXZOYL"
+                label: "",
+                type: "git",
+                url: "https://github.com/feifyKike/JS-API-Quiz"
             },
             {
-                label: "Github",
-                url: "https://github.com/feifyKike/JS-API-Quiz"
+                label: "",
+                type: "external",
+                url: "https://codepen.io/Max_the_coder/pen/yLXZOYL" //https://codepen.io/Max_the_coder/pen/yLXZOYL
             }
         ],
         imageLink: "images/trivia_pic.png",
@@ -180,11 +187,13 @@ const works = [
         techStack: "Python",
         links: [
             {
-                label: "Demo",
+                label: "",
+                type: "git",
                 url: "https://youtu.be/gw5kb1QKVp0"
             },
             {
-                label: "Github",
+                label: "",
+                type: "external",
                 url: "https://github.com/feifyKike/Covid-Cases-Visual"
             }
         ],
