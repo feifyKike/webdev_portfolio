@@ -20,7 +20,8 @@ const splashScreen = true // recommended: for best behavior after refresh
 
 // --- 👋 Greeting Section ---
 const greeting = {
-    intro: "Hello, my name is Maxim Shelepov 👨🏻‍💻",
+    intro: "Hello 👋, my name is",
+    name: "Maxim Shelepov",
     message: "I'm a web developer and a computer science student at NC State University",
     basedLocation: "Raleigh, NC",
     resumeLink: "https://docs.google.com/document/d/1Sa_sK3RMusoezzgzxu8LkV16i2Jra2qd/edit?usp=sharing&ouid=113657039181859132688&rtpof=true&sd=true", // recommended: google drive file share link (change to "anyone on the internet can view")
