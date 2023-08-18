@@ -8,9 +8,9 @@
             <div class="order-2 xl:order-none">
                 <p v-for="paragraph in content.autobiography">{{ paragraph }}<br/><br/></p>
                 <div>
-                    <p class="pb-3">Most Recent Tech Stack:</p>
-                    <ul class="flow flow-col list-image-[url(../components/icons/bullet_point.png)] pl-8 sm:grid sm:grid-rows-2 sm:grid-flow-col">
-                        <li v-for="tech in content.techStack">{{ tech }}</li>
+                    <p class="pb-3">Most Recent Tech Stack...</p>
+                    <ul class="flow flow-col list-['\2705'] pl-6 sm:grid sm:grid-rows-2 sm:grid-flow-col">
+                        <li v-for="tech in content.techStack" class="pl-2">{{ tech }}</li>
                     </ul>
                 </div>
             </div>
