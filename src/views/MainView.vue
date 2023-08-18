@@ -81,6 +81,7 @@ const showingSplash = ref(portfolio.splashScreen)
 const showLanding = ref(!(portfolio.transitions.active || portfolio.transitions.onlyLanding))
 
 onMounted(() => {
+	stylingPreferences()
 	splashScreen()
 	landingTransition()
 })
@@ -109,6 +110,14 @@ const landingTransition = () => {
 		setTimeout(() => {
 			showLanding.value = true
 		}, 500)
+	}
+}
+
+const stylingPreferences = () => {
+	const secondaryBackdrop = portfolio.colors.secondaryBackdrop
+
+	if (secondaryBackdrop.active) {
+		document.body.style.backgroundColor = secondaryBackdrop.color
 	}
 }
 

@@ -14,7 +14,7 @@
             <p class="text-slate-500 dark:text-slate-300">{{ project.description }}</p>
             <p class="text-slate-600">{{ project.techStack }}</p>
             <div class="flex space-x-6 items-center text-slate-400" :class="!project.alignLeft ? 'lg:justify-end' : ''">
-                <a v-for="link in project.links" :href="link.url" class="flex items-center space-x-2 hover:text-link-color" target="_blank">
+                <a v-for="link in project.links" :href="link.url" class="flex items-center space-x-2 hover:text-link-color focus:text-link-color active:text-link-color" target="_blank">
                     <span v-if="link.type == 'git'" class="flex items-center space-x-2">
                         <font-awesome-icon icon="fa-brands fa-github" class="h-7 w-7"></font-awesome-icon>
                         <span>{{ link.label }}</span>
