@@ -4,11 +4,7 @@
 // Should be inputted as a hex value. Use https://g.co/kgs/XCcs7T for choosing colors with hex.
 const colors = {
     buttonColor: "#4305ba",
-    LinkHighlightColor: "#4305ba",
-    secondaryBackdrop: {
-        active: true,
-        color: "#4305ba"
-    } // secondary background only visible on overscroll and in mobile top and bottom margins
+    LinkHighlightColor: "#4305ba"
 }
 
 // Transitions

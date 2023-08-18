@@ -32,7 +32,6 @@
 				</div>
 				<div class="col-span-4 flex-1 flex-col order-1 md:order-none">
 					<div class="container mx-auto">
-						<!-- <button @click="showLanding = !showLanding">Testing</button> -->
 						<LandingView :content="portfolio.greeting" :show-transition="showLanding"/>
 
 						<AboutView :content="portfolio.about" :transitions="portfolio.transitions" />
@@ -81,7 +80,6 @@ const showingSplash = ref(portfolio.splashScreen)
 const showLanding = ref(!(portfolio.transitions.active || portfolio.transitions.onlyLanding))
 
 onMounted(() => {
-	stylingPreferences()
 	splashScreen()
 	landingTransition()
 })
@@ -110,14 +108,6 @@ const landingTransition = () => {
 		setTimeout(() => {
 			showLanding.value = true
 		}, 500)
-	}
-}
-
-const stylingPreferences = () => {
-	const secondaryBackdrop = portfolio.colors.secondaryBackdrop
-
-	if (secondaryBackdrop.active) {
-		document.body.style.backgroundColor = secondaryBackdrop.color
 	}
 }
 
