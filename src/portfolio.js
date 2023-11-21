@@ -210,8 +210,8 @@ const contact = {
     externalLink: {
         shortTitle: "Get in Touch",
         note: [
-            "Currently seeking web and software development positions/internships in the RTP area for fall 2023 and spring 2024.",
-            "Also looking to build a team for project & startup ideas or just make professional connections."
+            "Currently seeking web and software development positions/internships in the RTP area for summer 2024.",
+            "Also looking to build a team for projects & startup ideas or just make professional connections."
         ], // paragraph breaks will be entered after each item,
         link: {
             email: "", // email takes precedance

@@ -31,7 +31,7 @@
 					</ul>
 				</div>
 				<div class="col-span-4 flex-1 flex-col order-1 md:order-none">
-					<div class="container mx-auto">
+					<div class="container mx-auto max-w-full 2xl:max-w-6xl">
 						<LandingView :content="portfolio.greeting" :show-transition="showLanding"/>
 
 						<AboutView :content="portfolio.about" :transitions="portfolio.transitions" />
