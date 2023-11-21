@@ -5,7 +5,7 @@
             <div class="flex-grow border-t border-black dark:border-white border-1"></div>
             <a :href="portfolio.archiveLink" class="pl-2 sm:pl-5 hover:text-link-color text-right text-sm">Visit Archive</a>
         </div>
-        <div :class="['flex flex-col space-y-12 mb-52 transition-all motion-reduce:transition-none duration-500 delay-300', visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm']">
+        <div :class="['flex flex-col space-y-12 mb-36 transition-all motion-reduce:transition-none duration-500 delay-300', visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm']">
             <WorkUnit
                 v-for="(project, index) in projInitial"
                 :key="index" :project="project"
