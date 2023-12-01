@@ -35,17 +35,24 @@ Check out the [live demo](https://feifykike.github.io/webdev_portfolio/) of the 
 
 ## Getting Started
 
-These instructions will help you get the project up and running on your local machine for your development, testing, & eventual deployment. Run all of the commands below in your chosen terminal.
+These instructions will help you get the project up and running on your local machine for your development, testing, & eventual deployment.
 
-⚡️ **A speedier but less future customizable alternative** would be to [fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo) and then make your updates to the [portfolio.js](src/portfolio.js) file via Github and then committing your changes which will automatically trigger a build process. Check step #2 of [deploy to Github Pages](#To-deploy-on-Github-Pages) for further instructions.
+### Fork the repository (that's it really)
+To keep your changes and version of the portfolio under your github and actions [fork this repository](https://github.com/feifyKike/webdev_portfolio/fork). More on forking repositories [here](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
 
-### Preparatory setup
+After creating your fork, you can make all content ([src/portfolio.js](src/portfolio.js)) updates and commits in github without cloning on your machine for local development. To run the deployment of your portfolio site make your first change to and commit (that will trigger the workflow and pages site deployment).
+
+>
+> ℹ️ The following steps in this section describe the setup for local development which is recommended if you want to see your styling (css) and content (js and html) changes instantly without rebuilding the Github Actions site each time.
+>
+
+### For local development
 You will need to install [Git](https://github.com/git-guides/install-git), [Node.js](https://nodejs.org/en/download), & [npm](https://www.npmjs.com/package/npm).
 
 Using [brew](https://brew.sh) is recommended for mac users.
 
-### Clone the repository
-Using the installed global packages from the previous step...
+#### Clone the repository
+Using the installed global packages from the previous step and your newly forked repository
 ```sh
 # Copy this remote repository to your current directory (folder)
 git clone https://github.com/feifyKike/webdev_portfolio.git
@@ -54,7 +61,7 @@ git clone https://github.com/feifyKike/webdev_portfolio.git
 cd webdev_portfolio
 ```
 
-### Install necessary project required packages
+#### Install necessary project required packages
 ```sh
 npm install
 ```
@@ -113,14 +120,6 @@ const works = { ... }
 
 ## Deployment
 
-Firstly, prepare your project for production by running:
-
-```sh
-# minify and prepare project for production
-npm run build
-
-```
-
 ### To deploy on Github Pages
 1. For fontawesome icons to work on the deployed site, visit *Settings -> Secrets and Variables -> Actions* and add your unique fontawesome registry auth token which can be found in your `~/.npmrc` or `webdev_portfolio/.npmrc` file ([more info about github action secrets here](https://docs.github.com/en/actions/security-guides/encrypted-secrets)).
 2. In the *Settings -> Actions -> General -> Workflow Permissions* set the github actions permission to **read & write**.
@@ -167,7 +166,6 @@ Hope to continue improving the site, as well as adding more components and layou
 **Planned Future Improvements:**
 - [ ] Add more layout components to `src/components`.
 - [ ] More color scheme styling options in `src/portfolio.js`.
-- [x] ~~More text and animation styling control in `src/portfolio.js`~~.
 
 💡 Leave your own ideas in the [issues](https://github.com/feifyKike/webdev_portfolio/issues) section or complete my [contact form](https://forms.gle/vhWrKD32i1d2MSZGA).
 
