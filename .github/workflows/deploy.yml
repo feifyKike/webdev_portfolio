@@ -17,9 +17,7 @@ jobs:
         uses: actions/setup-node@v3
 
       - name: Install npm dependencies
-        run: |
-          npm config set '//npm.fontawesome.com/:_authToken' "${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}"
-          npm ci --ignore-scripts
+        run: npm ci --ignore-scripts
 
       - name: Build project
         run: npm run build
