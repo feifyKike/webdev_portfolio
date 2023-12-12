@@ -36,7 +36,8 @@ const socialMediaLinks = {
     github: "https://github.com/feifyKike",
     linkedin: "https://www.linkedin.com/in/maxim-shelepov1",
     medium: "https://medium.com/@mimaishel",
-    stackoverflow: "https://stackoverflow.com/users/13826671/maxim"
+    stackoverflow: "",
+    xtwitter: "https://twitter.com/mimaishel"
 } // to add any additional social media links check out the README.md or src/icons.js file
 
 // --- 😎 About Section ---

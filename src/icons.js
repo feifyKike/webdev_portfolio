@@ -10,7 +10,8 @@ import {
     faGithub,
     faLinkedin,
     faMedium,
-    faStackOverflow
+    faStackOverflow,
+    faXTwitter
 } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
@@ -18,5 +19,6 @@ library.add(
     faGithub,
     faLinkedin,
     faMedium,
-    faStackOverflow
+    faStackOverflow,
+    faXTwitter
 )
