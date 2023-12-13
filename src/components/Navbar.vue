@@ -19,7 +19,7 @@
                 </div>
             </router-link>
 
-            <button @click="dropDownActive = !dropDownActive" :class="['inline-flex items-center p-2 ml-3 text-sm text-gray-500 lg:hidden transition-all motion-reduce:transition-none duration-500', showTransition ? 'opacity-1 blur-0' : 'opacity-0 blur-sm']">
+            <button @click="dropDownActive = !dropDownActive" :class="['inline-flex items-center p-2 ml-3 text-sm text-gray-500 xl:hidden transition-all motion-reduce:transition-none duration-500', showTransition ? 'opacity-1 blur-0' : 'opacity-0 blur-sm']">
                 <div v-if="!dropDownActive">
                     <Bars2Icon class="h-10 w-10 dark:fill-slate-300"/>
                 </div>
@@ -28,8 +28,8 @@
                 </div>
             </button>
 
-            <div class="hidden w-full lg:block lg:w-auto items-center" id="navbar-default">
-                <ul class="font-medium flex flex-col p-4 lg:p-0 mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
+            <div class="hidden w-full xl:block xl:w-auto items-center" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 xl:p-0 mt-4 xl:flex-row xl:space-x-8 xl:mt-0">
                     <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[50ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
                         <router-link class="block py-2 pl-3 pr-4 hover:text-link-color" to="/#about-section">About</router-link>
                     </li>
@@ -47,30 +47,48 @@
                             <button class="block py-2 px-6 bg-transparent border border-button-color shadow-sm shadow-button-color text-button-color transition ease-in-out hover:bg-button-color hover:text-white hover:dark:text-slate-300 focus:bg-button-color focus:text-white active:bg-button-color active:text-white duration-300">Resume</button>
                         </a>
                     </li>
+                    <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[250ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
+                        <button v-if="darkModeActive" class="block py-2" @click="$emit('toggle-dark')">
+                            <MoonIcon class="h-7 w-7 text-slate-300 hover:text-button-color"/>
+                        </button>
+                        <button v-else @click="$emit('toggle-dark')" class="block py-2">
+                            <SunIcon class="h-7 w-7 text-slate-400 hover:text-button-color"/>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
 
         <!-- Navbar Dropdown Area -->
         <NavTransition>
-            <div v-show="dropDownActive" class="block w-full absolute lg:hidden px-9 pb-4 bg-white/[.9] dark:bg-slate-900/[.8] backdrop-blur-sm">
+            <div v-show="dropDownActive" class="block w-full absolute xl:hidden px-9 pb-4 bg-white/[.9] dark:bg-slate-900/[.8] backdrop-blur-sm">
                 <ul>
                     <li>
-                        <router-link class="block py-5 pl-3 hover:text-link-color" to="/#about-section">😎 About</router-link>
+                        <router-link class="block py-5  hover:text-link-color" to="/#about-section">😎 About</router-link>
                     </li>
                     <li>
-                        <router-link class="block py-5 pl-3 hover:text-link-color" to="/#experience-section">🛡️ Experience</router-link>
+                        <router-link class="block py-5  hover:text-link-color" to="/#experience-section">🛡️ Experience</router-link>
                     </li>
                     <li>
-                        <router-link class="block py-5 pl-3 hover:text-link-color" to="/#work-section">💻 Work</router-link>
+                        <router-link class="block py-5  hover:text-link-color" to="/#work-section">💻 Work</router-link>
                     </li>
                     <li>
-                        <router-link class="block py-5 pl-3 hover:text-link-color" to="/#contact-section">📭 Contact</router-link>
+                        <router-link class="block py-5  hover:text-link-color" to="/#contact-section">📭 Contact</router-link>
                     </li>
                     <li>
                         <a :href="portfolio.greeting.resumeLink" target="_blank">
                             <button class="block w-full text-center bg-button-color py-2 px-6 mt-5 shadow-sm shadow-button-color focus:bg-button-color focus:text-white active:bg-button-color active:text-white text-white">Resume</button>
                         </a>
+                    </li>
+                    <li>
+                        <div class="block w-full text-center py-2 mt-5">
+                            <button v-if="darkModeActive" class="block py-2" @click="$emit('toggle-dark')">
+                                <MoonIcon class="h-7 w-7 text-slate-300 hover:text-button-color"/>
+                            </button>
+                            <button v-else @click="$emit('toggle-dark')" class="block py-2">
+                                <SunIcon class="h-7 w-7 text-slate-400 hover:text-button-color"/>
+                            </button>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -79,7 +97,7 @@
 </template>
 
 <script setup>
-import { Bars2Icon, XMarkIcon } from '@heroicons/vue/24/solid'
+import { Bars2Icon, XMarkIcon, MoonIcon, SunIcon } from '@heroicons/vue/24/solid'
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 import NavTransition from './transitions/NavTransition.vue';
 import portfolio from '../portfolio'
@@ -91,7 +109,8 @@ const prevScrollPosition = ref(0)
 const hideNavShadow = ref(true)
 
 const props = defineProps({
-    showTransition: Boolean
+    showTransition: Boolean,
+    darkModeActive: Boolean
 })
 
 onMounted(() => {
