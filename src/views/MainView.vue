@@ -122,11 +122,11 @@ const landingTransition = () => {
 const useDark = () => {
 	// credit: https://tailwindcss.com/docs/dark-mode#supporting-system-preference-and-manual-selection
 	if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-		document.documentElement.classList.add('dark')
 		document.documentElement.classList.remove('bg-white')
+		document.documentElement.classList.add('dark', 'bg-slate-900')
 		darkModeActive.value = true
 	} else {
-		document.documentElement.classList.remove('dark')
+		document.documentElement.classList.remove('dark', 'bg-slate-900')
 		document.documentElement.classList.add('bg-white')
 		darkModeActive.value = false
 	}
