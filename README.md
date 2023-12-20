@@ -49,15 +49,15 @@ After creating your fork, you can make all content ([src/portfolio.js](src/portf
 ### For local development
 You will need to install [Git](https://github.com/git-guides/install-git), [Node.js](https://nodejs.org/en/download), & [npm](https://www.npmjs.com/package/npm).
 
-Using [brew](https://brew.sh) is recommended for mac users.
+Using [brew](https://brew.sh) package manager is recommended for mac users.
 
-#### Clone the repository
-Using the installed global packages from the previous step and your newly forked repository
+#### Clone your forked repository
+After installing the global packages from the previous step and copying your forked repo clone url.
 ```sh
-# Copy this remote repository to your current directory (folder)
-git clone https://github.com/feifyKike/webdev_portfolio.git
+# Copy the forked remote repository to your local directory (folder)
+git clone https://github.com/your-github-username/webdev_portfolio.git # the name of the clone repo should match the forked repo name
 
-# Change into the project folder within your current directory
+# Navigate into the project folder within your current directory
 cd webdev_portfolio
 ```
 
@@ -71,21 +71,26 @@ Once all is set up, you can start developing by running the vite server and view
 ### Compile and Hot-Reload for Development
 ```sh
 npm run dev
-
-# a localhost:####/webdev_portfolio link should appear -> paste into your browser and view
 ```
+A `localhost:####/webdev_portfolio` link should appear. Paste into your browser and view.
 
-### Make commits and push them to your remote repository
-Before adding and pushing to your remote repository you should [create it first in github](https://docs.github.com/en/get-started/quickstart/create-a-repo).
+### Making commits, pushing them to your forked remote repository, & syncing changes
+To push your local changes to your forked github repository:
 ```sh
-git remote add origin https://github.com/YOUR_GITHUB_USERNMAE/webdev_portfolio.git # set a remote repo for git to point to
-git remote -v # shows the set remote
-
 git add . # add all the changes to the stage
 git status # shows all the staged changes
 
 git commit -m "Updating portfolio.js content."
-git push
+git push # automatically points to the origin url / target specified in `git remote -v`
+```
+Syncing changes between your forked repository and this repository:
+```sh
+git remote add upstream https://github.com/feifykike/webdev_portfolio.git # set a remote url to point to original repository (this one)
+git remote -v # shows the set remotes
+
+# When you want to sync new changes/updates from the original repository
+git fetch upstream # fetches changes from this repository
+git merge upstream/main # merges changes with your code; conflicts may occur
 ```
 🎉 Now watch and enjoy as the latest commit appears in your remote repo and the automatic deployment begins. For deployment, check out the [Deployment](#deployment) section.
 
@@ -120,12 +125,8 @@ const works = { ... }
 
 ## Deployment
 
-### To deploy on Github Pages
-1. For fontawesome icons to work on the deployed site, visit *Settings -> Secrets and Variables -> Actions* and add your unique fontawesome registry auth token which can be found in your `~/.npmrc` or `webdev_portfolio/.npmrc` file ([more info about github action secrets here](https://docs.github.com/en/actions/security-guides/encrypted-secrets)).
-2. In the *Settings -> Actions -> General -> Workflow Permissions* set the github actions permission to **read & write**.
-3. Make sure you set up git properly locally, created a remote repository, and are prepared to push to that remote. Take a look at [getting started section](#getting-started). For more information check out:
-    - [Setting remote repository](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#remotes-and-forks).
-    - [Pushing commits to remote](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push).
+### Deploying on Github Pages
+In the *Settings -> Actions -> General -> Workflow Permissions* set the github actions permission to **read & write**.
 
 The github workflow [deploy.yml](.github/workflows/deploy.yml) file should automatically start the build process for deployment to your github pages url: `https://<GITHUB_USERNAME>.github.io/webdev_portfolio/` after you push to the main branch of your remote repository. Enjoy & Good Luck!
 
@@ -157,8 +158,10 @@ The project comes pre-equipped with:
 
 🔭 Take look at [heroicons basic usage](https://github.com/tailwindlabs/heroicons) & [adding icons with fontawesome tutorial](https://fontawesome.com/docs/web/use-with/vue/add-icons) for more details.
 
-ℹ️ All brand icons are trademarks of their respective owners. Do not use brand logos for any purpose except
-to represent the company, product, or service to which they refer.
+>
+> ℹ️ All brand icons are trademarks of their respective owners. Do not use brand logos for any purpose except
+> to represent the company, product, or service to which they refer.
+>
 
 ## Future
 Hope to continue improving the site, as well as adding more components and layout options in the [src/components](src/components) folder.
