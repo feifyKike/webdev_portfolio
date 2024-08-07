@@ -22,7 +22,7 @@ const splashScreen = true // recommended: for best behavior after refresh
 const greeting = {
     intro: "Hello 👋, my name is",
     name: "Maxim Shelepov",
-    message: "I'm a computer science student and an up-and-coming software engineer. Previously worked as a web developer at my university building tools to aid students and educators. Now working on a educational AI tool as part of a Stealth Startup.",
+    message: "I'm a computer science student and an up-and-coming software engineer. Previously worked as a web developer at my university building tools to aid students and educators. Now working on an educational AI tool as part of a Stealth Startup.",
     basedLocation: "Raleigh, NC",
     resumeLink: "https://docs.google.com/document/d/1Sa_sK3RMusoezzgzxu8LkV16i2Jra2qd/edit?usp=sharing&ouid=113657039181859132688&rtpof=true&sd=true", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
@@ -44,7 +44,7 @@ const socialMediaLinks = {
 const about = {
     autobiography: [
         "My name is Maxim Shelepov and I'm a computer science student at North Carolina State University. I have a knack for solving problems and creating impactful software solutions. Having worked in web development as part of my university IT team, I gained beyond surface-level experience in Laravel and the PHP universe. Through personal studies while in high school, I built my first every full-stack personal website maximshelepov.com using Django.",
-        "Nowadays you can find me doing CS coursework (😅 sad but true) or working on a Stealth Startup that me and a CS peer founded."
+        "Nowadays you can find me doing CS coursework (😅) or working on a Stealth Startup that a CS peer and I founded."
     ], // Separated items are paragraphs
     techStack: [
         "PHP",
@@ -64,7 +64,7 @@ const experiences = [
     {
         position: "SWE",
         company: {
-            name: "Steal Startup",
+            name: "Stealth Startup",
             link: "https://en.wikipedia.org/wiki/Stealth_startup"
         },
         duration: "July 2024 - Present",
@@ -254,7 +254,7 @@ const contact = {
             email: "", // email takes precedance
             other: "https://forms.gle/W3MswTKsPWMxEbn58"
         },
-        responseTimeMessage: "...and I'll resopnd within the next 24hrs"
+        responseTimeMessage: "...and I'll respond within the next 24hrs"
     },
     formEmbedLink: "" // inclusion of this link will take precedance
 }
