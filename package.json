@@ -1,6 +1,6 @@
 {
   "name": "webdev_portfolio",
-  "homepage": "/webdev_portfolio/",
+  "homepage": ".",
   "version": "0.0.0",
   "private": true,
   "scripts": {

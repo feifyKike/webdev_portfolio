@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: '/webdev_portfolio/',
+	base: '/', // base set to root to support custom domain.
 	plugins: [vue()],
 	resolve: {
 		alias: {
