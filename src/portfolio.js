@@ -22,7 +22,7 @@ const splashScreen = true // recommended: for best behavior after refresh
 const greeting = {
     intro: "Hello 👋, my name is",
     name: "Maxim Shelepov",
-    message: "I'm a computer science student and an up-and-coming software engineer. Previously worked as a web developer at my university building tools to aid students and educators. Now working on an educational AI tool as part of a Stealth Startup.",
+    message: "I'm a CS Senior and an up-and-coming SWE with hefty experience in app development. Previously worked as a web developer at my university building tools to aid students and educators. Now working on an educational AI tool to rethink the college student and AI interaction.",
     basedLocation: "Raleigh, NC",
     resumeLink: "https://docs.google.com/document/d/1Sa_sK3RMusoezzgzxu8LkV16i2Jra2qd/edit?usp=sharing&ouid=113657039181859132688&rtpof=true&sd=true", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
@@ -43,8 +43,8 @@ const socialMediaLinks = {
 // --- 😎 About Section ---
 const about = {
     autobiography: [
-        "My name is Maxim Shelepov and I'm a computer science student at North Carolina State University. I have a knack for solving problems and creating impactful software solutions. Having worked in web development as part of my university IT team, I gained beyond surface-level experience in Laravel and the PHP universe. Through personal studies while in high school, I built my first every full-stack personal website maximshelepov.com using Django.",
-        "Nowadays you can find me doing CS coursework (😅) or working on a Stealth Startup that a CS peer and I founded."
+        "My name is Maxim Shelepov and I'm a computer science senior at North Carolina State University. I have a knack for solving problems and creating impactful software solutions. Through personal studies in high school I built my first every full-stack personal website maximshelepov.com. While in college, I worked as a web developer for my university IT team. After two years, I gained extensive experience in industry-grade software and knowledge of advanced app development practices.",
+        "Nowadays you can find me doing CS coursework or developing an educational AI tool to rethink the college student and AI interaction."
     ], // Separated items are paragraphs
     techStack: [
         "PHP",
@@ -62,22 +62,6 @@ const about = {
 // --- 🛡️ Experience Section ---
 const experiences = [
     {
-        position: "SWE",
-        company: {
-            name: "Stealth Startup",
-            link: "https://en.wikipedia.org/wiki/Stealth_startup"
-        },
-        duration: "July 2024 - Present",
-        bulletPoints: [
-            "Developing an educational tool to rethink the student-AI interaction. With a core principle to enhance learning and growth.",
-            "More updates to come!"
-        ],
-        hashtags: [
-            "Python",
-            "JS"
-        ]
-    },
-    {
         position: "Web Dev Intern",
         company: {
             name: "WolfTech",
@@ -85,9 +69,9 @@ const experiences = [
         },
         duration: "Aug 2022 - Aug 2024",
         bulletPoints: [
-            "Resolved issues and developed new tools within several university web applications (email automation, research discovery, educational resources, scheduling tools, and text-generative AI news sharing).",
-            "Achieved 100+ github code contributions as an intern on the team.",
-            "Significant contributions in rebuilding and modernizing the university digital sign manager and system. Transforming idea into a testable development application with tools for migrating to new system."
+            "Supported the development and maintenance of university web applications over two years, improving user experience and developer efficiency using PHP, Laravel, SQL, Docker, and Vue.js.",
+            "Made 350+ contributions to code repositories, including developing tools for email automation, research discovery, and AI-driven news sharing, which reduced operational time and led to higher user adoption.",
+            "Laid the groundwork for the modernized campus digital signage system and management application which supports 360 digital signs and 50 different organizations on campus."
         ],
         hashtags: [
             "Laravel",
@@ -99,35 +83,53 @@ const experiences = [
             "Tailwind"
         ]
     },
-    // Archived
-    // {
-    //     position: "Math Tutor",
-    //     company: {
-    //         name: "Mathnasium",
-    //         link: "https://www.mathnasium.com"
-    //     },
-    //     duration: "Jan 2022 - Aug 2022",
-    //     bulletPoints: [
-    //         "Taught math to students elementary through high school covering topics from basic algebra to college-level calculus.",
-    //         "Directed the trajectory of the student's learning plan and math topic evaluation to facilitate success in their school math class.",
-    //         "Requested by many students and parents for routine weekly tutoring sessions in a system with a standard random weekly rotation."
-    //     ],
-    //     hashtags: [
-    //         "Calc 1-2",
-    //         "Algebra 1-3",
-    //         "Discrete Math",
-    //         "Statistics"
-    //     ]
-    // }
+    {
+        position: "Math Tutor",
+        company: {
+            name: "Mathnasium",
+            link: "https://www.mathnasium.com"
+        },
+        duration: "Jan 2022 - Aug 2022",
+        bulletPoints: [
+            "Provided math tutoring to students from elementary through high school, covering a range of topics from basic algebra to college-level calculus, using personalized teaching strategies.",
+            "Designed and directed individualized learning plans, tailoring math topics evaluation to enhance understanding and improve performance in their school math classes."
+        ],
+        hashtags: [
+            "Calc 1-2",
+            "Algebra 1-3",
+            "Discrete Math",
+            "Statistics"
+        ]
+    }
 ]
 
 // --- 💻 Work Section ---
 const works = [
     {
-        projectName: "Web Dev Portfolio Template",
+        projectName: "EdTech AI Tool",
+        yearCompleted: "2024",
+        description: "Developed an educational tool in collaboration with a peer, to rethink the college student and AI interaction. With a core principle to enhance learning and personal growth. Responsible for UI, UX, and DB management with ongoing goal to complete version 1.0 in December 2024.",
+        techStack: "Python, Vue.js",
+        links: [
+            // {
+            //     label: "",
+            //     type: "git",
+            //     url: "#"
+            // },
+            // {
+            //     label: "",
+            //     type: "external",
+            //     url: "#"
+            // }
+        ],
+        imageLink: "images/version_edtech_pic.png",
+        alignLeft: false
+    },
+    {
+        projectName: "Open-Source Developer Portfolio",
         yearCompleted: "2023",
-        description: "Created an open source portfolio single page application template for any developer. Built with an intention of simple personal profile implementation and personal customization on top of the existing stack (Vue.js, HTML, Tailwind.css).",
-        techStack: "Vue.js, Tailwind.css",
+        description: "Designed and developed an open-sourced single page application template to help web developers create visually appealing personal portfolios, focusing on ease of use and customization. Built with Vue.js, JS, HTML, Tailwind CSS, the project achieved 27 stars and 14 forks on GitHub.",
+        techStack: "Vue.js, JS, HTML, Tailwind.css",
         links: [
             {
                 label: "",
@@ -164,15 +166,15 @@ const works = [
         alignLeft: false
     },
     {
-        projectName: "Dynamic Portfolio Website",
+        projectName: "Personal Portfolio App",
         yearCompleted: "2021",
-        description: "Developed a personal portfolio website with Python backend using the Django web development framework. Incorporated HTML, CSS, and JavaScript to construct the frontend of the website.",
-        techStack: "Django, Python, HTML, CSS, JS",
+        description: "Built a dynamic, live-editable personal portfolio website with an admin dashboard for real-time updates. Developed using Django (Python) for the backend, and HTML, CSS, and JavaScript for the frontend, following the MVC architecture, which enhanced my full-stack development skills.",
+        techStack: "Django, Python, HTML, CSS, Bootstrap4, JS",
         links: [
             {
                 label: "",
                 type: "external",
-                url: "https://maximshelepov.com"
+                url: "https://site--maximshelepov--6tkhqqjrq9c5.code.run"
             }
         ],
         imageLink: "images/portfolio_pic.png",
