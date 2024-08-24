@@ -22,9 +22,9 @@ const splashScreen = true // recommended: for best behavior after refresh
 const greeting = {
     intro: "Hello 👋, my name is",
     name: "Maxim Shelepov",
-    message: "I'm a computer science senior with hefty experience in app development. Previously worked as a web developer at my university building tools to aid students and educators. Now working on an educational AI tool, designed to rethink interactions between college students and AI.",
+    message: "I'm a computer science senior with hefty experience in app development. Previously worked as a web developer at my university, where I built tools to support both students and educators. Currently, I'm developing an educational AI tool aimed at redefining how college students interact with AI.",
     basedLocation: "Raleigh, NC",
-    resumeLink: "https://docs.google.com/document/d/1Sa_sK3RMusoezzgzxu8LkV16i2Jra2qd/edit?usp=sharing&ouid=113657039181859132688&rtpof=true&sd=true", // recommended: google drive file share link (change to "anyone on the internet can view")
+    resumeLink: "https://docs.google.com/document/d/1mr9JHhWJVqSCHND39x3uYChWZ4YSUsW3/edit?usp=sharing&ouid=113657039181859132688&rtpof=true&sd=true", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
         link: "images/initials.png", // use relative path from  parent directory -> ex: images/image.ext
         custom: true // takes precedence over image logo and allows for custom HTML logo (./components/Navbar.vue)
@@ -43,7 +43,7 @@ const socialMediaLinks = {
 // --- 😎 About Section ---
 const about = {
     autobiography: [
-        "My name is Maxim Shelepov and I'm a computer science senior at North Carolina State University. I have a knack for solving problems and creating impactful software solutions. Through personal studies in high school I built my first every full-stack personal website maximshelepov.com. While in college, I worked as a web developer for my university IT team. After two years, I gained extensive experience in industry-grade software and knowledge of advanced app development practices.",
+        "My name is Maxim Shelepov and I'm a computer science senior at North Carolina State University. I have a knack for solving problems and creating impactful software solutions. Through personal studies in high school, I built my first every full-stack personal website maximshelepov.com. While in college, I worked as a web developer for my university's IT team, gaining extensive experience in industry-grade software and advanced app development practices.",
         "Nowadays you can find me doing CS coursework (😅) or developing an app to tackle the next big challenge."
     ], // Separated items are paragraphs
     techStack: [
@@ -250,13 +250,13 @@ const contact = {
     externalLink: {
         shortTitle: "Get in Touch",
         note: [
-            "Currently seeking full-time software development positions in the Research Triangle Park or Buffalo NY area.",
+            "Actively seeking full-time software development positions as a May 2025 graduate.",
         ], // paragraph breaks will be entered after each item,
         link: {
-            email: "", // email takes precedance
+            email: "mimaishel@gmail.com", // email takes precedance
             other: "https://forms.gle/W3MswTKsPWMxEbn58"
         },
-        responseTimeMessage: "...and I'll respond within the next 24hrs"
+        responseTimeMessage: ""
     },
     formEmbedLink: "" // inclusion of this link will take precedance
 }
