@@ -22,7 +22,7 @@ const splashScreen = true // recommended: for best behavior after refresh
 const greeting = {
     intro: "Hello 👋, my name is",
     name: "Maxim Shelepov",
-    message: "I'm a CS Senior and an up-and-coming SWE with hefty experience in app development. Previously worked as a web developer at my university building tools to aid students and educators. Now working on an educational AI tool to rethink the college student and AI interaction.",
+    message: "I'm a computer science senior with hefty experience in app development. Previously worked as a web developer at my university building tools to aid students and educators. Now working on an educational AI tool, designed to rethink interactions between college students and AI.",
     basedLocation: "Raleigh, NC",
     resumeLink: "https://docs.google.com/document/d/1Sa_sK3RMusoezzgzxu8LkV16i2Jra2qd/edit?usp=sharing&ouid=113657039181859132688&rtpof=true&sd=true", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
@@ -44,7 +44,7 @@ const socialMediaLinks = {
 const about = {
     autobiography: [
         "My name is Maxim Shelepov and I'm a computer science senior at North Carolina State University. I have a knack for solving problems and creating impactful software solutions. Through personal studies in high school I built my first every full-stack personal website maximshelepov.com. While in college, I worked as a web developer for my university IT team. After two years, I gained extensive experience in industry-grade software and knowledge of advanced app development practices.",
-        "Nowadays you can find me doing CS coursework or developing an educational AI tool to rethink the college student and AI interaction."
+        "Nowadays you can find me doing CS coursework (😅) or developing an app to tackle the next big challenge."
     ], // Separated items are paragraphs
     techStack: [
         "PHP",
