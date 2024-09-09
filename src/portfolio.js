@@ -24,7 +24,7 @@ const greeting = {
     name: "Maxim Shelepov",
     message: "I'm a computer science senior with hefty experience in app development. Previously worked as a web developer at my university, where I built tools to support both students and educators. Currently, I'm developing an educational AI tool aimed at redefining how college students interact with AI.",
     basedLocation: "Raleigh, NC",
-    resumeLink: "https://docs.google.com/document/d/1mr9JHhWJVqSCHND39x3uYChWZ4YSUsW3/edit?usp=sharing&ouid=113657039181859132688&rtpof=true&sd=true", // recommended: google drive file share link (change to "anyone on the internet can view")
+    resumeLink: "https://drive.google.com/file/d/1mqJOf8_yi2FXIQfTH4ieop6duuDYAV-n/view?usp=sharing", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
         link: "images/initials.png", // use relative path from  parent directory -> ex: images/image.ext
         custom: true // takes precedence over image logo and allows for custom HTML logo (./components/Navbar.vue)
